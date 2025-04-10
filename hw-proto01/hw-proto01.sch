@@ -834,6 +834,12 @@ Source: &lt;a href="https://www.espressif.com/sites/default/files/documentation/
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="+3V3">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -845,6 +851,84 @@ Source: &lt;a href="https://www.espressif.com/sites/default/files/documentation/
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3" prefix="+3V3">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="TSR_1-2433E">
+<description>&lt;1 Amp POL converter, industrial, 6-36 VDC input, pos.-pos. circuit, cost efficient, LM78 compatible, SIP-3&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="TSR-1-2433">
+<description>&lt;b&gt;TSR-1-2433&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="-2.54" y="0" drill="0.78" diameter="1.28"/>
+<pad name="2" x="0" y="0" drill="0.78" diameter="1.28"/>
+<pad name="3" x="2.54" y="0" drill="0.78" diameter="1.28"/>
+<text x="-0.508509375" y="1.605140625" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.508509375" y="1.605140625" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-5.85" y1="5.6" x2="5.85" y2="5.6" width="0.2" layer="51"/>
+<wire x1="5.85" y1="5.6" x2="5.85" y2="-2" width="0.2" layer="51"/>
+<wire x1="5.85" y1="-2" x2="-5.85" y2="-2" width="0.2" layer="51"/>
+<wire x1="-5.85" y1="-2" x2="-5.85" y2="5.6" width="0.2" layer="51"/>
+<wire x1="-5.85" y1="5.6" x2="5.85" y2="5.6" width="0.2" layer="21"/>
+<wire x1="5.85" y1="5.6" x2="5.85" y2="-2" width="0.2" layer="21"/>
+<wire x1="5.85" y1="-2" x2="-5.85" y2="-2" width="0.2" layer="21"/>
+<wire x1="-5.85" y1="-2" x2="-5.85" y2="5.6" width="0.2" layer="21"/>
+<circle x="-2.819" y="-2.721" radius="0.149159375" width="0.4" layer="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TSR_1-2433E">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="VIN+" x="0" y="0" length="middle" direction="in"/>
+<pin name="GND" x="0" y="-2.54" length="middle" direction="pwr"/>
+<pin name="VOUT+" x="0" y="-5.08" length="middle" direction="out"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TSR_1-2433E" prefix="PS">
+<description>&lt;b&gt;1 Amp POL converter, industrial, 6-36 VDC input, pos.-pos. circuit, cost efficient, LM78 compatible, SIP-3&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://tracopower.com/tsr1e-datasheet/"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TSR_1-2433E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSR-1-2433">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN+" pad="1"/>
+<connect gate="G$1" pin="VOUT+" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="1 Amp POL converter, industrial, 6-36 VDC input, pos.-pos. circuit, cost efficient, LM78 compatible, SIP-3" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Traco Power" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TSR 1-2433E" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="495-TSR1-2433E" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/TRACO-Power/TSR-1-2433E?qs=vmHwEFxEFR9haWIzn8wG3A%3D%3D" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -877,6 +961,12 @@ Source: &lt;a href="https://www.espressif.com/sites/default/files/documentation/
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="VPP" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="PS1" library="TSR_1-2433E" deviceset="TSR_1-2433E" device=""/>
+<part name="SUPPLY3" library="supply2" deviceset="VPP" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -899,6 +989,12 @@ Source: &lt;a href="https://www.espressif.com/sites/default/files/documentation/
 <instance part="GND4" gate="1" x="132.08" y="73.66"/>
 <instance part="SUPPLY2" gate="G$1" x="132.08" y="109.22"/>
 <instance part="GND6" gate="1" x="78.74" y="185.42"/>
+<instance part="PS1" gate="G$1" x="165.1" y="144.78" rot="R90"/>
+<instance part="SUPPLY3" gate="G$1" x="144.78" y="154.94"/>
+<instance part="GND7" gate="1" x="167.64" y="127"/>
+<instance part="+3V1" gate="G$1" x="193.04" y="157.48"/>
+<instance part="+3V2" gate="G$1" x="-50.8" y="241.3"/>
+<instance part="+3V3" gate="G$1" x="78.74" y="231.14"/>
 </instances>
 <busses>
 </busses>
@@ -920,6 +1016,13 @@ Source: &lt;a href="https://www.espressif.com/sites/default/files/documentation/
 <pinref part="SUPPLY2" gate="G$1" pin="VPP"/>
 <wire x1="147.32" y1="99.06" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="99.06" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY3" gate="G$1" pin="VPP"/>
+<wire x1="144.78" y1="152.4" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="PS1" gate="G$1" pin="VIN+"/>
+<wire x1="144.78" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="142.24" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GATE1D" class="0">
@@ -1035,6 +1138,11 @@ Source: &lt;a href="https://www.espressif.com/sites/default/files/documentation/
 <wire x1="96.52" y1="210.82" x2="78.74" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="210.82" x2="78.74" y2="187.96" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="PS1" gate="G$1" pin="GND"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="167.64" y1="144.78" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SW1" class="0">
 <segment>
@@ -1076,6 +1184,27 @@ Source: &lt;a href="https://www.espressif.com/sites/default/files/documentation/
 <pinref part="CAN" gate="G$1" pin="3"/>
 <pinref part="IC3" gate="G$1" pin="CANL"/>
 <wire x1="142.24" y1="210.82" x2="124.46" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="PS1" gate="G$1" pin="VOUT+"/>
+<wire x1="170.18" y1="144.78" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="170.18" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="142.24" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="3V3"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<wire x1="-5.08" y1="223.52" x2="-50.8" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="223.52" x2="-50.8" y2="238.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="VSS"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="96.52" y1="213.36" x2="78.74" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="213.36" x2="78.74" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
