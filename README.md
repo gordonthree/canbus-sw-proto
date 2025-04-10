@@ -32,3 +32,4 @@
 * heavy duty 3-pos terminal block https://mou.sr/3FTFHBW
 * ATO fuse holder https://mou.sr/4cihwsZ
 * CANBUS Transceiver https://mou.sr/4llTLVa 
+* ESP32 Module https://mou.sr/4j1XWDP
