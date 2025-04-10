@@ -1,4 +1,4 @@
-# canbus switch prototype
+# CAN bus switch prototype
 
 ## Brain board (lives in cab):
 * Raspberry Pi Zero2
