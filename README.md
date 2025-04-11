@@ -5,22 +5,26 @@
 * Touchscreen
 * CANBUS interface
 
-## Switch board (lives anywhere):
+## 3-way switch board (lives anywhere):
 * 1x ESP32
 * 1x CANBUS interface
-* 6x p-channel mosfets
-* 6x high side mosfet drivers
-* 6x fuse holders
-* 2x 6-pos barrier strip
-* 1x 3-pos barrier strip
+* 1x high side switch IC (10a max)
+* 2x p-channel mosfets (30a max)
+* 1x dual chan driver TC4472
+* 3x fuse holders
+* 1x 6-pos barrier strip G V+ V+ SW1 SW2 SW3
+* 1x 3-pos terminal for can bus
+* 1x serial programming header
 
 ## Prototype 
 * 1x ESP32
-* 1x CAN bus interface 
-* 2x p-channel FETs 
-* 1x Dual chan driver
-* 2x blade fuse holders
-* 1x 6-pos barrier strip 
+* 1x CAN bus transciever
+* 2x p-channel FETs (20a max?)
+* 2x high side switch ICs (10a max?)
+* 1x dual chan driver TC4472
+* 1x 6-pos barrier strip
+* 1x 3-pos terminal for can bus
+* 1x serial programming header
 
 
 ## Parts
