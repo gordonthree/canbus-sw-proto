@@ -45,3 +45,6 @@
 * CANBUS Transceiver https://mou.sr/4llTLVa 
 * ESP32 Module https://mou.sr/4j1XWDP
 * Onboard DC-DC converter https://mou.sr/4i8eVTN
+* P chan fet chonky https://mou.sr/42aUOja
+* P chan power-so8 https://mou.sr/42BhcBs
+  
