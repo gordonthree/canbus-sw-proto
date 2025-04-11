@@ -25,7 +25,7 @@
 
 ## Parts
 * 4x8 RGB matrix keypad https://www.adafruit.com/product/4020
-* p-channel fet https://mou.sr/3RIdccZ
+* ~~p-channel fet https://mou.sr/3RIdccZ~~
 * high side driver https://mou.sr/4jcK616
 * 6 position terminal block https://mou.sr/4i4P92Y
 * heavy duty 6-pos terminal https://mou.sr/3R63QYn
@@ -33,3 +33,4 @@
 * ATO fuse holder https://mou.sr/4cihwsZ
 * CANBUS Transceiver https://mou.sr/4llTLVa 
 * ESP32 Module https://mou.sr/4j1XWDP
+* Onboard DC-DC converter https://mou.sr/4i8eVTN
