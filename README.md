@@ -8,7 +8,7 @@
 
 ## Alt brain board
 * 1x ESP32
-* 1x CANBUS transciever
+* 1x CAN bus transciever
 * 1x 4-pos screw terminal for power + can
 * 
 
