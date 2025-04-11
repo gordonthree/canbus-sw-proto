@@ -1,13 +1,20 @@
 # CAN bus switch prototype
 
 ## Brain board (lives in cab):
-* Raspberry Pi Zero2
-* Touchscreen
-* CANBUS interface
+* Raspberry Pi 3 or 4?
+* Touchscreen usb + hdmi
+* CANBUS to SPI shield
+* Web based interface
+
+## Alt brain board
+* 1x ESP32
+* 1x CANBUS transciever
+* 1x 4-pos screw terminal for power + can
+* 
 
 ## 3-way switch board (lives anywhere):
 * 1x ESP32
-* 1x CANBUS interface
+* 1x CANBUS transciever
 * 1x high side switch IC (10a max)
 * 2x p-channel mosfets (30a max)
 * 1x dual chan driver TC4472
