@@ -38,6 +38,7 @@
 * 4x p-channel FETs (30a max?) power-so8
 * 2x high side switch ICs (10a max?)
 * 1x dual chan driver TC4472
+* 1x 3-pos barrier strip for power +12 +12 GND
 * 2x 6-pos barrier strip SW1 GND SW2 GND SW3 GND - repeated for other side
 * 1x 3-pos terminal for can bus
 * 1x serial programming header
