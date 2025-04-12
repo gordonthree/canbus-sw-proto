@@ -12,27 +12,35 @@
 * 1x 4-pos screw terminal for power + can
 * 
 
-## 3-way switch board (lives anywhere):
-* 1x ESP32
-* 1x CAN bus transciever
-* 1x high side switch IC (10a max)
-* 2x p-channel mosfets (30a max)
-* 1x dual chan driver TC4472
-* 3x fuse holders
-* 1x 6-pos barrier strip G V+ V+ SW1 SW2 SW3
-* 1x 3-pos terminal for can bus
-* 1x serial programming header
-
-## Prototype 
+## Prototype 01 Four switches
 * 1x ESP32
 * 1x CAN bus transciever
 * 2x p-channel FETs (20a max?)
 * 2x high side switch ICs (10a max?)
 * 1x dual chan driver TC4472
-* 1x 6-pos barrier strip V+ G SW1 SW2 SW3 SW4
+* 1x 6-pos barrier strip V+ GND SW1 SW2 SW3 SW4
 * 1x 3-pos terminal for can bus
 * 1x serial programming header
 
+## Prototype 02 Three switches
+* 1x ESP32
+* 1x CAN bus transciever
+* 2x p-channel FETs (30a max?) power-so8
+* 1x high side switch ICs (10a max?)
+* 1x dual chan driver TC4472
+* 1x 6-pos barrier strip V+ V+ SW1 SW2 SW3 GND
+* 1x 3-pos terminal for can bus
+* 1x serial programming header
+
+## Prototype 03 Six switch
+* 1x ESP32
+* 1x CAN bus transciever
+* 4x p-channel FETs (30a max?) power-so8
+* 2x high side switch ICs (10a max?)
+* 1x dual chan driver TC4472
+* 2x 6-pos barrier strip SW1 GND SW2 GND SW3 GND - repeated for other side
+* 1x 3-pos terminal for can bus
+* 1x serial programming header
 
 ## Parts
 * 4x8 RGB matrix keypad https://www.adafruit.com/product/4020
@@ -47,4 +55,5 @@
 * Onboard DC-DC converter https://mou.sr/4i8eVTN
 * P chan fet chonky https://mou.sr/42aUOja
 * P chan power-so8 https://mou.sr/42BhcBs
+* 3.3v LDO regulator https://mou.sr/3RgIUy6
   
