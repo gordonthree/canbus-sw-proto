@@ -6766,6 +6766,80 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 </deviceset>
 </devicesets>
 </library>
+<library name="con-barrier-3pos">
+<description>&lt;Barrier Terminal Blocks 3P 12.7MM TERM STRP SR W/OUT MNT END&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="4DBP10803">
+<description>&lt;b&gt;4DB-P108-03-4&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.8288" diameter="2.743" shape="square"/>
+<pad name="2" x="8.255" y="0" drill="1.8288" diameter="2.743"/>
+<pad name="3" x="16.51" y="0" drill="1.8288" diameter="2.743"/>
+<text x="8.128" y="-4.064" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="8.128" y="-4.064" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-5.08" y1="-10.414" x2="21.336" y2="-10.414" width="0.1" layer="51"/>
+<wire x1="21.336" y1="-10.414" x2="21.336" y2="2.286" width="0.1" layer="51"/>
+<wire x1="21.336" y1="2.286" x2="-5.08" y2="2.286" width="0.1" layer="51"/>
+<wire x1="-5.08" y1="2.286" x2="-5.08" y2="-10.414" width="0.1" layer="51"/>
+<wire x1="-6.08" y1="3.286" x2="22.336" y2="3.286" width="0.1" layer="51"/>
+<wire x1="22.336" y1="3.286" x2="22.336" y2="-11.414" width="0.1" layer="51"/>
+<wire x1="22.336" y1="-11.414" x2="-6.08" y2="-11.414" width="0.1" layer="51"/>
+<wire x1="-6.08" y1="-11.414" x2="-6.08" y2="3.286" width="0.1" layer="51"/>
+<wire x1="-5.08" y1="2.286" x2="21.336" y2="2.286" width="0.2" layer="21"/>
+<wire x1="21.336" y1="2.286" x2="21.336" y2="-10.4" width="0.2" layer="21"/>
+<wire x1="21.336" y1="-10.4" x2="-5.08" y2="-10.4" width="0.2" layer="21"/>
+<wire x1="-5.08" y1="-10.4" x2="-5.08" y2="2.286" width="0.2" layer="21"/>
+<wire x1="0" y1="2.9" x2="0" y2="2.9" width="0.2" layer="21"/>
+<wire x1="0" y1="2.9" x2="0" y2="2.8" width="0.2" layer="21" curve="180"/>
+<wire x1="0" y1="2.8" x2="0" y2="2.8" width="0.2" layer="21"/>
+<wire x1="0" y1="2.8" x2="0" y2="2.9" width="0.2" layer="21" curve="180"/>
+<wire x1="0" y1="2.9" x2="0" y2="2.9" width="0.2" layer="21"/>
+<wire x1="0" y1="2.9" x2="0" y2="2.8" width="0.2" layer="21" curve="180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="4DB-P108-03">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="2" x="0" y="-2.54" length="middle"/>
+<pin name="3" x="0" y="-5.08" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="4DB-P108-03" prefix="J">
+<description>&lt;b&gt;Dual Barrier, Printed Circuit Pin, Wire-to-Board, 3 Position, 8.26 mm [.325 in] Centerline, 1 Row, Buchanan 4DB Series, Barrier Strips&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_4_N9-624224.pdfhttps://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1-1773458-2_BARRIER_STRIPS_QRG&amp;DocType=Data Sheet&amp;DocLang=English&amp;PartCntxt=2-1437667-5&amp;DocFormat"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="4DB-P108-03" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="4DBP10803">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Dual Barrier, Printed Circuit Pin, Wire-to-Board, 3 Position, 8.26 mm [.325 in] Centerline, 1 Row, Buchanan 4DB Series, Barrier Strips" constant="no"/>
+<attribute name="HEIGHT" value="13.589mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="TE Connectivity" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="4DB-P108-03" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="571-214376675" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/TE-Connectivity/4DB-P108-03?qs=cX92MwKKzGt2YIn2dZcfJQ%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6776,9 +6850,9 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 </class>
 </classes>
 <parts>
-<part name="IC1" library="VN5E160MSTR-E" deviceset="VN5E160MSTR-E" device="" value=""/>
+<part name="Q3" library="VN5E160MSTR-E" deviceset="VN5E160MSTR-E" device="" value=""/>
 <part name="IC3" library="MCP2562T-H_SN" deviceset="MCP2562T-H_SN" device="" value="MCP2562T"/>
-<part name="PWR" library="4DB-P108-06" deviceset="4DB-P108-06" device="" value=""/>
+<part name="PWR2" library="4DB-P108-06" deviceset="4DB-P108-06" device="" value=""/>
 <part name="MCU" library="ESP32-WROOM-32E-N8R2" deviceset="ESP32-WROOM-32E-N8R2" device="" value="ESP32-WROOM-32E"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -6827,29 +6901,40 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="J3" library="rcl" deviceset="R-US_" device="0204/7" value="000"/>
 <part name="J4" library="rcl" deviceset="R-US_" device="0204/7" value="000"/>
-<part name="Q3" library="transistor-vishay-pchan-pso8" deviceset="SQJ147ELP-T1_GE3" device=""/>
 <part name="Q4" library="transistor-vishay-pchan-pso8" deviceset="SQJ147ELP-T1_GE3" device=""/>
+<part name="Q5" library="transistor-vishay-pchan-pso8" deviceset="SQJ147ELP-T1_GE3" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="PWRIN" library="con-barrier-3pos" deviceset="4DB-P108-03" device="" value=""/>
+<part name="PWR1" library="4DB-P108-06" deviceset="4DB-P108-06" device="" value=""/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="Q6" library="VN5E160MSTR-E" deviceset="VN5E160MSTR-E" device="" value=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="P+9" library="supply1" deviceset="+12V" device=""/>
+<part name="R8" library="rcl" deviceset="R-US_" device="0204/7" value="10K0"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="IC1" gate="G$1" x="236.22" y="220.98"/>
+<instance part="Q3" gate="G$1" x="236.22" y="220.98"/>
 <instance part="IC3" gate="G$1" x="96.52" y="215.9"/>
-<instance part="PWR" gate="G$1" x="228.6" y="162.56"/>
+<instance part="PWR2" gate="G$1" x="228.6" y="149.86" smashed="yes" rot="MR180">
+<attribute name="NAME" x="232.41" y="167.64" size="1.778" layer="95" rot="MR180" align="center-left"/>
+<attribute name="VALUE" x="245.11" y="144.78" size="1.778" layer="96" rot="MR180" align="center-left"/>
+</instance>
 <instance part="MCU" gate="G$1" x="-5.08" y="226.06"/>
 <instance part="GND1" gate="1" x="50.8" y="152.4"/>
 <instance part="GND2" gate="1" x="228.6" y="193.04"/>
 <instance part="GND5" gate="1" x="-60.96" y="152.4"/>
-<instance part="GND4" gate="1" x="213.36" y="137.16"/>
+<instance part="GND4" gate="1" x="238.76" y="106.68"/>
 <instance part="GND6" gate="1" x="76.2" y="190.5"/>
 <instance part="VR3V3" gate="G$1" x="165.1" y="144.78" rot="R90"/>
 <instance part="GND7" gate="1" x="167.64" y="127"/>
 <instance part="+3V1" gate="G$1" x="193.04" y="157.48"/>
 <instance part="+3V2" gate="G$1" x="-50.8" y="256.54"/>
 <instance part="P+1" gate="1" x="-10.16" y="93.98"/>
-<instance part="P+2" gate="1" x="213.36" y="172.72"/>
+<instance part="P+2" gate="1" x="238.76" y="137.16"/>
 <instance part="P+3" gate="1" x="144.78" y="154.94"/>
 <instance part="P+4" gate="1" x="78.74" y="157.48"/>
 <instance part="VR5V0" gate="G$1" x="96.52" y="144.78" rot="R90"/>
@@ -6888,25 +6973,39 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <instance part="GND3" gate="1" x="127" y="27.94"/>
 <instance part="J3" gate="G$1" x="132.08" y="58.42" rot="R90"/>
 <instance part="J4" gate="G$1" x="170.18" y="55.88" rot="R90"/>
-<instance part="Q3" gate="G$1" x="137.16" y="78.74"/>
-<instance part="Q4" gate="G$1" x="175.26" y="78.74"/>
+<instance part="Q4" gate="G$1" x="137.16" y="78.74"/>
+<instance part="Q5" gate="G$1" x="175.26" y="78.74"/>
+<instance part="GND12" gate="1" x="226.06" y="142.24"/>
+<instance part="PWRIN" gate="G$1" x="243.84" y="124.46" smashed="yes">
+<attribute name="NAME" x="250.19" y="129.54" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="260.35" y="129.54" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="PWR1" gate="G$1" x="261.62" y="162.56" smashed="yes" rot="MR0">
+<attribute name="NAME" x="260.35" y="167.64" size="1.778" layer="95" rot="MR0" align="center-left"/>
+<attribute name="VALUE" x="245.11" y="167.64" size="1.778" layer="96" rot="MR0" align="center-left"/>
+</instance>
+<instance part="GND13" gate="1" x="264.16" y="142.24"/>
+<instance part="Q6" gate="G$1" x="325.12" y="220.98"/>
+<instance part="GND14" gate="1" x="317.5" y="193.04"/>
+<instance part="P+9" gate="1" x="365.76" y="243.84"/>
+<instance part="R8" gate="G$1" x="309.88" y="218.44"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="SW3" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="OUT_1"/>
+<pinref part="Q3" gate="G$1" pin="OUT_1"/>
 <wire x1="269.24" y1="215.9" x2="271.78" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="215.9" x2="281.94" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="OUT_2"/>
+<pinref part="Q3" gate="G$1" pin="OUT_2"/>
 <wire x1="269.24" y1="218.44" x2="271.78" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="218.44" x2="271.78" y2="215.9" width="0.1524" layer="91"/>
 <junction x="271.78" y="215.9"/>
 <label x="281.94" y="215.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWR" gate="G$1" pin="5"/>
+<pinref part="PWR2" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="152.4" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
 <label x="223.52" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -6977,13 +7076,7 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <junction x="-27.94" y="190.5"/>
 </segment>
 <segment>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="213.36" y1="149.86" x2="213.36" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="PWR" gate="G$1" pin="6"/>
-<wire x1="228.6" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="Q3" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="236.22" y1="220.98" x2="228.6" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="220.98" x2="228.6" y2="195.58" width="0.1524" layer="91"/>
@@ -7042,6 +7135,46 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <wire x1="124.46" y1="38.1" x2="127" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="127" y1="38.1" x2="127" y2="30.48" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="PWRIN" gate="G$1" pin="3"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="243.84" y1="119.38" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="119.38" x2="238.76" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PWR1" gate="G$1" pin="2"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="261.62" y1="160.02" x2="264.16" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="160.02" x2="264.16" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="PWR1" gate="G$1" pin="4"/>
+<wire x1="264.16" y1="154.94" x2="264.16" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="149.86" x2="264.16" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="154.94" x2="264.16" y2="154.94" width="0.1524" layer="91"/>
+<junction x="264.16" y="154.94"/>
+<pinref part="PWR1" gate="G$1" pin="6"/>
+<wire x1="261.62" y1="149.86" x2="264.16" y2="149.86" width="0.1524" layer="91"/>
+<junction x="264.16" y="149.86"/>
+</segment>
+<segment>
+<pinref part="PWR2" gate="G$1" pin="5"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="228.6" y1="160.02" x2="226.06" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="160.02" x2="226.06" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="PWR2" gate="G$1" pin="3"/>
+<wire x1="226.06" y1="154.94" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="149.86" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="154.94" x2="226.06" y2="154.94" width="0.1524" layer="91"/>
+<junction x="226.06" y="154.94"/>
+<pinref part="PWR2" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="149.86" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
+<junction x="226.06" y="149.86"/>
+</segment>
+<segment>
+<pinref part="Q6" gate="G$1" pin="GND"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="325.12" y1="220.98" x2="317.5" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="220.98" x2="317.5" y2="195.58" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SW1" class="0">
 <segment>
@@ -7071,54 +7204,23 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <junction x="40.64" y="78.74"/>
 </segment>
 <segment>
-<pinref part="PWR" gate="G$1" pin="3"/>
-<wire x1="223.52" y1="157.48" x2="228.6" y2="157.48" width="0.1524" layer="91"/>
-<label x="223.52" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<wire x1="144.78" y1="63.5" x2="144.78" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="55.88" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
-<label x="147.32" y="55.88" size="1.27" layer="95" xref="yes"/>
-<pinref part="Q3" gate="G$1" pin="D_1"/>
-<wire x1="137.16" y1="68.58" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="68.58" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="63.5" x2="144.78" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="D_2"/>
-<wire x1="162.56" y1="78.74" x2="165.1" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="78.74" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="76.2" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="73.66" x2="165.1" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="71.12" x2="165.1" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="63.5" x2="144.78" y2="63.5" width="0.1524" layer="91"/>
-<junction x="144.78" y="63.5"/>
-<pinref part="Q3" gate="G$1" pin="D_5"/>
-<wire x1="162.56" y1="71.12" x2="165.1" y2="71.12" width="0.1524" layer="91"/>
-<junction x="165.1" y="71.12"/>
-<pinref part="Q3" gate="G$1" pin="D_4"/>
-<wire x1="162.56" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
-<junction x="165.1" y="73.66"/>
-<pinref part="Q3" gate="G$1" pin="D_3"/>
-<wire x1="162.56" y1="76.2" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
-<junction x="165.1" y="76.2"/>
+<pinref part="PWR2" gate="G$1" pin="6"/>
+<wire x1="223.52" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
+<label x="223.52" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SW2" class="0">
 <segment>
-<wire x1="60.96" y1="66.04" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
-<label x="63.5" y="58.42" size="1.27" layer="95" xref="yes"/>
 <pinref part="Q2" gate="G$1" pin="D_1"/>
 <wire x1="50.8" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="71.12" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="D_2"/>
 <wire x1="76.2" y1="81.28" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="81.28" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="78.74" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="76.2" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="73.66" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
-<junction x="60.96" y="66.04"/>
+<wire x1="81.28" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="D_5"/>
 <wire x1="76.2" y1="73.66" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
 <junction x="81.28" y="73.66"/>
@@ -7130,35 +7232,9 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <junction x="81.28" y="78.74"/>
 </segment>
 <segment>
-<pinref part="PWR" gate="G$1" pin="4"/>
-<wire x1="223.52" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
-<label x="223.52" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<wire x1="185.42" y1="63.5" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="55.88" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
-<label x="187.96" y="55.88" size="1.27" layer="95" xref="yes"/>
-<pinref part="Q4" gate="G$1" pin="D_1"/>
-<wire x1="175.26" y1="68.58" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="68.58" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="G$1" pin="D_2"/>
-<wire x1="200.66" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="78.74" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="76.2" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="73.66" x2="205.74" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="71.12" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
-<junction x="185.42" y="63.5"/>
-<pinref part="Q4" gate="G$1" pin="D_5"/>
-<wire x1="200.66" y1="71.12" x2="205.74" y2="71.12" width="0.1524" layer="91"/>
-<junction x="205.74" y="71.12"/>
-<pinref part="Q4" gate="G$1" pin="D_4"/>
-<wire x1="200.66" y1="73.66" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
-<junction x="205.74" y="73.66"/>
-<pinref part="Q4" gate="G$1" pin="D_3"/>
-<wire x1="200.66" y1="76.2" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
-<junction x="205.74" y="76.2"/>
+<pinref part="PWR2" gate="G$1" pin="4"/>
+<wire x1="223.52" y1="157.48" x2="228.6" y2="157.48" width="0.1524" layer="91"/>
+<label x="223.52" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7262,16 +7338,6 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <junction x="45.72" y="78.74"/>
 </segment>
 <segment>
-<pinref part="PWR" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="162.56" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="162.56" x2="213.36" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="P+2" gate="1" pin="+12V"/>
-<pinref part="PWR" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="160.02" x2="213.36" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="160.02" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
-<junction x="213.36" y="162.56"/>
-</segment>
-<segment>
 <wire x1="144.78" y1="152.4" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="VR3V3" gate="G$1" pin="VIN+"/>
 <wire x1="144.78" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
@@ -7286,11 +7352,11 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <wire x1="78.74" y1="142.24" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VCC_1"/>
+<pinref part="Q3" gate="G$1" pin="VCC_1"/>
 <pinref part="P+7" gate="1" pin="+12V"/>
 <wire x1="269.24" y1="213.36" x2="276.86" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="213.36" x2="276.86" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VCC_2"/>
+<pinref part="Q3" gate="G$1" pin="VCC_2"/>
 <wire x1="276.86" y1="220.98" x2="276.86" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="220.98" x2="276.86" y2="220.98" width="0.1524" layer="91"/>
 <junction x="276.86" y="220.98"/>
@@ -7304,29 +7370,49 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <wire x1="124.46" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="127" y1="48.26" x2="127" y2="73.66" width="0.1524" layer="91"/>
 <junction x="127" y="83.82"/>
-<pinref part="Q3" gate="G$1" pin="S_3"/>
+<pinref part="Q4" gate="G$1" pin="S_3"/>
 <wire x1="127" y1="73.66" x2="127" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="127" y1="76.2" x2="127" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="127" y1="78.74" x2="127" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="73.66" x2="127" y2="73.66" width="0.1524" layer="91"/>
 <junction x="127" y="73.66"/>
-<pinref part="Q3" gate="G$1" pin="S_2"/>
+<pinref part="Q4" gate="G$1" pin="S_2"/>
 <wire x1="137.16" y1="76.2" x2="127" y2="76.2" width="0.1524" layer="91"/>
 <junction x="127" y="76.2"/>
-<pinref part="Q3" gate="G$1" pin="S_1"/>
+<pinref part="Q4" gate="G$1" pin="S_1"/>
 <wire x1="137.16" y1="78.74" x2="127" y2="78.74" width="0.1524" layer="91"/>
 <junction x="127" y="78.74"/>
-<pinref part="Q4" gate="G$1" pin="S_1"/>
+<pinref part="Q5" gate="G$1" pin="S_1"/>
 <wire x1="175.26" y1="78.74" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="78.74" x2="170.18" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="G$1" pin="S_2"/>
+<pinref part="Q5" gate="G$1" pin="S_2"/>
 <wire x1="175.26" y1="76.2" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="76.2" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
 <junction x="170.18" y="78.74"/>
-<pinref part="Q4" gate="G$1" pin="S_3"/>
+<pinref part="Q5" gate="G$1" pin="S_3"/>
 <wire x1="175.26" y1="73.66" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="73.66" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
 <junction x="170.18" y="76.2"/>
+</segment>
+<segment>
+<pinref part="P+2" gate="1" pin="+12V"/>
+<pinref part="PWRIN" gate="G$1" pin="2"/>
+<wire x1="243.84" y1="121.92" x2="238.76" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="121.92" x2="238.76" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="PWRIN" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="124.46" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="124.46" x2="238.76" y2="124.46" width="0.1524" layer="91"/>
+<junction x="238.76" y="124.46"/>
+</segment>
+<segment>
+<pinref part="Q6" gate="G$1" pin="VCC_1"/>
+<pinref part="P+9" gate="1" pin="+12V"/>
+<wire x1="358.14" y1="213.36" x2="365.76" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="213.36" x2="365.76" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="Q6" gate="G$1" pin="VCC_2"/>
+<wire x1="365.76" y1="220.98" x2="365.76" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="220.98" x2="365.76" y2="220.98" width="0.1524" layer="91"/>
+<junction x="365.76" y="220.98"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -7354,6 +7440,11 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <pinref part="MCU" gate="G$1" pin="IO26"/>
 <wire x1="-10.16" y1="200.66" x2="-5.08" y2="200.66" width="0.1524" layer="91"/>
 <label x="-10.16" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="P" pin="INA"/>
+<wire x1="96.52" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
+<label x="96.52" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CTL3" class="0">
@@ -7395,11 +7486,6 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <wire x1="38.1" y1="210.82" x2="33.02" y2="210.82" width="0.1524" layer="91"/>
 <label x="38.1" y="210.82" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="IC2" gate="P" pin="INB"/>
-<wire x1="96.52" y1="40.64" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
-<label x="96.52" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="CTL1" class="0">
 <segment>
@@ -7411,11 +7497,6 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <pinref part="MCU" gate="G$1" pin="IO18"/>
 <wire x1="38.1" y1="213.36" x2="33.02" y2="213.36" width="0.1524" layer="91"/>
 <label x="38.1" y="213.36" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="P" pin="INA"/>
-<wire x1="96.52" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
-<label x="96.52" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CAN_TX" class="0">
@@ -7461,7 +7542,7 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <net name="N$7" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="IC1" gate="G$1" pin="IN"/>
+<pinref part="Q3" gate="G$1" pin="IN"/>
 <wire x1="226.06" y1="218.44" x2="236.22" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7595,7 +7676,7 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="63.5" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="G"/>
+<pinref part="Q4" gate="G$1" pin="G"/>
 <wire x1="137.16" y1="71.12" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7603,8 +7684,102 @@ Source: &lt;a href="https://www.vishay.com/docs/77857/sqj147elp.pdf"&gt; Datashe
 <segment>
 <pinref part="J4" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="60.96" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="G$1" pin="G"/>
+<pinref part="Q5" gate="G$1" pin="G"/>
 <wire x1="175.26" y1="71.12" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SW4" class="0">
+<segment>
+<pinref part="Q4" gate="G$1" pin="D_1"/>
+<wire x1="137.16" y1="68.58" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="68.58" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="Q4" gate="G$1" pin="D_2"/>
+<wire x1="162.56" y1="78.74" x2="165.1" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="78.74" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="76.2" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="73.66" x2="165.1" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="71.12" x2="165.1" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="63.5" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="Q4" gate="G$1" pin="D_5"/>
+<wire x1="162.56" y1="71.12" x2="165.1" y2="71.12" width="0.1524" layer="91"/>
+<junction x="165.1" y="71.12"/>
+<pinref part="Q4" gate="G$1" pin="D_4"/>
+<wire x1="162.56" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
+<junction x="165.1" y="73.66"/>
+<pinref part="Q4" gate="G$1" pin="D_3"/>
+<wire x1="162.56" y1="76.2" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
+<junction x="165.1" y="76.2"/>
+</segment>
+<segment>
+<pinref part="PWR1" gate="G$1" pin="1"/>
+<wire x1="266.7" y1="162.56" x2="261.62" y2="162.56" width="0.1524" layer="91"/>
+<label x="266.7" y="162.56" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SW5" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="D_1"/>
+<wire x1="175.26" y1="68.58" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="68.58" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="Q5" gate="G$1" pin="D_2"/>
+<wire x1="200.66" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="78.74" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="76.2" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="73.66" x2="205.74" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="71.12" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="Q5" gate="G$1" pin="D_5"/>
+<wire x1="200.66" y1="71.12" x2="205.74" y2="71.12" width="0.1524" layer="91"/>
+<junction x="205.74" y="71.12"/>
+<pinref part="Q5" gate="G$1" pin="D_4"/>
+<wire x1="200.66" y1="73.66" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
+<junction x="205.74" y="73.66"/>
+<pinref part="Q5" gate="G$1" pin="D_3"/>
+<wire x1="200.66" y1="76.2" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
+<junction x="205.74" y="76.2"/>
+</segment>
+<segment>
+<pinref part="PWR1" gate="G$1" pin="3"/>
+<wire x1="266.7" y1="157.48" x2="261.62" y2="157.48" width="0.1524" layer="91"/>
+<label x="266.7" y="157.48" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SW6" class="0">
+<segment>
+<pinref part="PWR1" gate="G$1" pin="5"/>
+<wire x1="266.7" y1="152.4" x2="261.62" y2="152.4" width="0.1524" layer="91"/>
+<label x="266.7" y="152.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q6" gate="G$1" pin="OUT_1"/>
+<wire x1="358.14" y1="215.9" x2="360.68" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="Q6" gate="G$1" pin="OUT_2"/>
+<wire x1="360.68" y1="215.9" x2="373.38" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="218.44" x2="360.68" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="218.44" x2="360.68" y2="215.9" width="0.1524" layer="91"/>
+<junction x="360.68" y="215.9"/>
+<label x="373.38" y="215.9" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="Q6" gate="G$1" pin="IN"/>
+<wire x1="314.96" y1="218.44" x2="325.12" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CTL6" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="299.72" y1="218.44" x2="304.8" y2="218.44" width="0.1524" layer="91"/>
+<label x="299.72" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="CTL5" class="0">
+<segment>
+<pinref part="IC2" gate="P" pin="INB"/>
+<wire x1="96.52" y1="40.64" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
+<label x="96.52" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
