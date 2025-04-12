@@ -7021,6 +7021,82 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 </deviceset>
 </devicesets>
 </library>
+<library name="TLV74333PDBVR">
+<description>&lt;300mA Low-Dropout (LDO) Regulator&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOT95P280X145-5N">
+<description>&lt;b&gt;TLV74333PDBVR&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="2" x="-1.25" y="0" dx="1.2" dy="0.6" layer="1"/>
+<smd name="3" x="-1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="4" x="1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="5" x="1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.1" y1="1.775" x2="2.1" y2="1.775" width="0.05" layer="51"/>
+<wire x1="2.1" y1="1.775" x2="2.1" y2="-1.775" width="0.05" layer="51"/>
+<wire x1="2.1" y1="-1.775" x2="-2.1" y2="-1.775" width="0.05" layer="51"/>
+<wire x1="-2.1" y1="-1.775" x2="-2.1" y2="1.775" width="0.05" layer="51"/>
+<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.1" layer="51"/>
+<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="0.5" x2="0.15" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.3" y1="1.45" x2="0.3" y2="1.45" width="0.2" layer="21"/>
+<wire x1="0.3" y1="1.45" x2="0.3" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="0.3" y1="-1.45" x2="-0.3" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="-0.3" y1="-1.45" x2="-0.3" y2="1.45" width="0.2" layer="21"/>
+<wire x1="-1.85" y1="1.5" x2="-0.65" y2="1.5" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TLV74333PDBVR">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="IN" x="0" y="0" length="middle"/>
+<pin name="GND" x="0" y="-2.54" length="middle"/>
+<pin name="EN" x="0" y="-5.08" length="middle"/>
+<pin name="NC" x="25.4" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="OUT" x="25.4" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TLV74333PDBVR" prefix="IC">
+<description>&lt;b&gt;300mA Low-Dropout (LDO) Regulator&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.ti.com/lit/gpn/tlv743p"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TLV74333PDBVR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-5N">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="300mA Low-Dropout (LDO) Regulator" constant="no"/>
+<attribute name="HEIGHT" value="1.45mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TLV74333PDBVR" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-TLV74333PDBVR" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV74333PDBVR?qs=EU6FO9ffTwe08kePOwcQGA%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7040,13 +7116,11 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="VR3V3" library="TSR_1-2433E" deviceset="TSR_1-2433E" device="" value="+3V3"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
-<part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
 <part name="VR5V0" library="TSR_1-2433E" deviceset="TSR_1-2433E" device="" value="+5V"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
@@ -7092,6 +7166,11 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <part name="J2" library="jumper" deviceset="J" device="5MM"/>
 <part name="J3" library="jumper" deviceset="J" device="12MM" value="J12MM"/>
 <part name="J4" library="jumper" deviceset="J" device="5MM"/>
+<part name="P+3" library="supply1" deviceset="+5V" device=""/>
+<part name="IC1" library="TLV74333PDBVR" deviceset="TLV74333PDBVR" device=""/>
+<part name="C3" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
+<part name="C4" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
+<part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="10K0"/>
 </parts>
 <sheets>
 <sheet>
@@ -7110,13 +7189,11 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <instance part="GND5" gate="1" x="-60.96" y="152.4"/>
 <instance part="GND4" gate="1" x="238.76" y="106.68"/>
 <instance part="GND6" gate="1" x="76.2" y="190.5"/>
-<instance part="VR3V3" gate="G$1" x="165.1" y="144.78" rot="R90"/>
-<instance part="GND7" gate="1" x="167.64" y="127"/>
-<instance part="+3V1" gate="G$1" x="193.04" y="157.48"/>
+<instance part="GND7" gate="1" x="147.32" y="129.54"/>
+<instance part="+3V1" gate="G$1" x="193.04" y="154.94"/>
 <instance part="+3V2" gate="G$1" x="-50.8" y="256.54"/>
 <instance part="P+1" gate="1" x="-10.16" y="93.98"/>
 <instance part="P+2" gate="1" x="238.76" y="137.16"/>
-<instance part="P+3" gate="1" x="144.78" y="154.94"/>
 <instance part="P+4" gate="1" x="78.74" y="157.48"/>
 <instance part="VR5V0" gate="G$1" x="96.52" y="144.78" rot="R90"/>
 <instance part="GND8" gate="1" x="99.06" y="129.54"/>
@@ -7170,6 +7247,11 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <instance part="J2" gate="1" x="45.72" y="58.42" rot="R90"/>
 <instance part="J3" gate="1" x="132.08" y="58.42" rot="R90"/>
 <instance part="J4" gate="1" x="170.18" y="55.88" rot="R90"/>
+<instance part="P+3" gate="1" x="144.78" y="157.48"/>
+<instance part="IC1" gate="G$1" x="154.94" y="152.4"/>
+<instance part="C3" gate="G$1" x="139.7" y="142.24"/>
+<instance part="C4" gate="G$1" x="182.88" y="142.24"/>
+<instance part="R9" gate="G$1" x="17.78" y="147.32" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7275,11 +7357,25 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <wire x1="134.62" y1="198.12" x2="134.62" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="195.58" x2="76.2" y2="195.58" width="0.1524" layer="91"/>
 <junction x="76.2" y="195.58"/>
+<pinref part="CAN" gate="-2" pin="KL"/>
+<wire x1="154.94" y1="220.98" x2="152.4" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="220.98" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="195.58" x2="134.62" y2="195.58" width="0.1524" layer="91"/>
+<junction x="134.62" y="195.58"/>
 </segment>
 <segment>
-<pinref part="VR3V3" gate="G$1" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="167.64" y1="144.78" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="149.86" x2="147.32" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<wire x1="147.32" y1="134.62" x2="147.32" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="149.86" x2="147.32" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="134.62" x2="139.7" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="134.62" x2="139.7" y2="137.16" width="0.1524" layer="91"/>
+<junction x="147.32" y="134.62"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="134.62" x2="182.88" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="134.62" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="VR5V0" gate="G$1" pin="GND"/>
@@ -7301,6 +7397,10 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <wire x1="12.7" y1="137.16" x2="7.62" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="137.16" x2="7.62" y2="127" width="0.1524" layer="91"/>
 <junction x="7.62" y="127"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="147.32" x2="7.62" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="147.32" x2="7.62" y2="137.16" width="0.1524" layer="91"/>
+<junction x="7.62" y="137.16"/>
 </segment>
 <segment>
 <pinref part="PROG" gate="G$1" pin="5"/>
@@ -7434,13 +7534,6 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="VR3V3" gate="G$1" pin="VOUT+"/>
-<wire x1="170.18" y1="144.78" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="170.18" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="142.24" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="MCU" gate="G$1" pin="3V3"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="-5.08" y1="223.52" x2="-40.64" y2="223.52" width="0.1524" layer="91"/>
@@ -7481,6 +7574,16 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <wire x1="-7.62" y1="142.24" x2="2.54" y2="142.24" width="0.1524" layer="91"/>
 <junction x="2.54" y="142.24"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="180.34" y1="149.86" x2="182.88" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="149.86" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="149.86" x2="193.04" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="144.78" x2="182.88" y2="149.86" width="0.1524" layer="91"/>
+<junction x="182.88" y="149.86"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -7515,13 +7618,6 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <wire x1="50.8" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="76.2" x2="45.72" y2="78.74" width="0.1524" layer="91"/>
 <junction x="45.72" y="78.74"/>
-</segment>
-<segment>
-<wire x1="144.78" y1="152.4" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="VR3V3" gate="G$1" pin="VIN+"/>
-<wire x1="144.78" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="142.24" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="VR5V0" gate="G$1" pin="VIN+"/>
@@ -7613,6 +7709,19 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <wire x1="63.5" y1="218.44" x2="63.5" y2="215.9" width="0.1524" layer="91"/>
 <junction x="73.66" y="218.44"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="IN"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="154.94" y1="152.4" x2="144.78" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="152.4" x2="144.78" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="EN"/>
+<wire x1="154.94" y1="147.32" x2="144.78" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="147.32" x2="144.78" y2="152.4" width="0.1524" layer="91"/>
+<junction x="144.78" y="152.4"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="152.4" x2="139.7" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="152.4" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="CTL4" class="0">
 <segment>
@@ -7677,9 +7786,9 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <label x="91.44" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="IO22"/>
-<wire x1="38.1" y1="198.12" x2="33.02" y2="198.12" width="0.1524" layer="91"/>
-<label x="38.1" y="198.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="MCU" gate="G$1" pin="IO23"/>
+<wire x1="38.1" y1="195.58" x2="33.02" y2="195.58" width="0.1524" layer="91"/>
+<label x="38.1" y="195.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAN_RX" class="0">
@@ -7689,9 +7798,9 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <label x="91.44" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="IO21"/>
-<wire x1="38.1" y1="205.74" x2="33.02" y2="205.74" width="0.1524" layer="91"/>
-<label x="38.1" y="205.74" size="1.27" layer="95" xref="yes"/>
+<pinref part="MCU" gate="G$1" pin="IO22"/>
+<wire x1="38.1" y1="198.12" x2="33.02" y2="198.12" width="0.1524" layer="91"/>
+<label x="38.1" y="198.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -7967,6 +8076,18 @@ Source: &lt;a href="https://www.mouser.co.il/datasheet/2/418/9/ENG_CD_2_1437667_
 <wire x1="0" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="48.26" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="J2" gate="1" pin="1"/>
+</segment>
+</net>
+<net name="CANSTBY" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="STBY"/>
+<wire x1="129.54" y1="215.9" x2="124.46" y2="215.9" width="0.1524" layer="91"/>
+<label x="129.54" y="215.9" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="147.32" x2="22.86" y2="147.32" width="0.1524" layer="91"/>
+<label x="27.94" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
