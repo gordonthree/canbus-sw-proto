@@ -7171,6 +7171,8 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tlv743p"&gt; Datasheet &lt;/a&gt;<
 <part name="C3" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
 <part name="C4" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="10K0"/>
+<part name="RVDIV1" library="rcl" deviceset="R-US_" device="R0603" value="33K0"/>
+<part name="RVDIV2" library="rcl" deviceset="R-US_" device="R0603" value="8K2"/>
 </parts>
 <sheets>
 <sheet>
@@ -7187,7 +7189,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tlv743p"&gt; Datasheet &lt;/a&gt;<
 <instance part="GND1" gate="1" x="50.8" y="152.4"/>
 <instance part="GND2" gate="1" x="228.6" y="193.04"/>
 <instance part="GND5" gate="1" x="-60.96" y="152.4"/>
-<instance part="GND4" gate="1" x="238.76" y="106.68"/>
+<instance part="GND4" gate="1" x="238.76" y="93.98"/>
 <instance part="GND6" gate="1" x="76.2" y="190.5"/>
 <instance part="GND7" gate="1" x="147.32" y="129.54"/>
 <instance part="+3V1" gate="G$1" x="193.04" y="154.94"/>
@@ -7230,9 +7232,9 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tlv743p"&gt; Datasheet &lt;/a&gt;<
 <instance part="Q4" gate="G$1" x="137.16" y="78.74"/>
 <instance part="Q5" gate="G$1" x="175.26" y="78.74"/>
 <instance part="GND12" gate="1" x="226.06" y="142.24"/>
-<instance part="PWRIN" gate="G$1" x="243.84" y="124.46" smashed="yes">
-<attribute name="NAME" x="250.19" y="129.54" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="260.35" y="129.54" size="1.778" layer="96" align="center-left"/>
+<instance part="PWRIN" gate="G$1" x="243.84" y="119.38" smashed="yes">
+<attribute name="NAME" x="250.19" y="124.46" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="260.35" y="124.46" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="PWR1" gate="G$1" x="261.62" y="162.56" smashed="yes" rot="MR0">
 <attribute name="NAME" x="260.35" y="167.64" size="1.778" layer="95" rot="MR0" align="center-left"/>
@@ -7252,6 +7254,8 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tlv743p"&gt; Datasheet &lt;/a&gt;<
 <instance part="C3" gate="G$1" x="139.7" y="142.24"/>
 <instance part="C4" gate="G$1" x="182.88" y="142.24"/>
 <instance part="R9" gate="G$1" x="17.78" y="147.32" rot="R180"/>
+<instance part="RVDIV1" gate="G$1" x="218.44" y="124.46" rot="R270"/>
+<instance part="RVDIV2" gate="G$1" x="218.44" y="106.68" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7417,8 +7421,13 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tlv743p"&gt; Datasheet &lt;/a&gt;<
 <segment>
 <pinref part="PWRIN" gate="G$1" pin="3"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="243.84" y1="119.38" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="119.38" x2="238.76" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="114.3" x2="238.76" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="114.3" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="RVDIV2" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="99.06" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="99.06" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="99.06" x2="218.44" y2="101.6" width="0.1524" layer="91"/>
+<junction x="238.76" y="99.06"/>
 </segment>
 <segment>
 <pinref part="PWR1" gate="G$1" pin="2"/>
@@ -7672,12 +7681,17 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tlv743p"&gt; Datasheet &lt;/a&gt;<
 <segment>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <pinref part="PWRIN" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="121.92" x2="238.76" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="121.92" x2="238.76" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="116.84" x2="238.76" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="116.84" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="PWRIN" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="124.46" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="124.46" x2="238.76" y2="124.46" width="0.1524" layer="91"/>
-<junction x="238.76" y="124.46"/>
+<wire x1="238.76" y1="119.38" x2="238.76" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="132.08" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="119.38" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
+<junction x="238.76" y="119.38"/>
+<pinref part="RVDIV1" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="129.54" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="132.08" x2="238.76" y2="132.08" width="0.1524" layer="91"/>
+<junction x="238.76" y="132.08"/>
 </segment>
 <segment>
 <pinref part="Q6" gate="G$1" pin="VCC_1"/>
@@ -8088,6 +8102,57 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tlv743p"&gt; Datasheet &lt;/a&gt;<
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="147.32" x2="22.86" y2="147.32" width="0.1524" layer="91"/>
 <label x="27.94" y="147.32" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ADC1_6" class="0">
+<segment>
+<pinref part="MCU" gate="G$1" pin="IO34"/>
+<wire x1="-10.16" y1="213.36" x2="-5.08" y2="213.36" width="0.1524" layer="91"/>
+<label x="-10.16" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ADC1_7" class="0">
+<segment>
+<pinref part="MCU" gate="G$1" pin="IO35"/>
+<wire x1="-10.16" y1="210.82" x2="-5.08" y2="210.82" width="0.1524" layer="91"/>
+<label x="-10.16" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ADC1_3" class="0">
+<segment>
+<pinref part="MCU" gate="G$1" pin="SENSOR_VN"/>
+<wire x1="-10.16" y1="215.9" x2="-5.08" y2="215.9" width="0.1524" layer="91"/>
+<label x="-10.16" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ADC1_0" class="0">
+<segment>
+<pinref part="MCU" gate="G$1" pin="SENSOR_VP"/>
+<wire x1="-10.16" y1="218.44" x2="-5.08" y2="218.44" width="0.1524" layer="91"/>
+<label x="-10.16" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ADC2_6" class="0">
+<segment>
+<pinref part="MCU" gate="G$1" pin="IO14"/>
+<wire x1="-10.16" y1="195.58" x2="-5.08" y2="195.58" width="0.1524" layer="91"/>
+<label x="-10.16" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ADC1_5" class="0">
+<segment>
+<pinref part="MCU" gate="G$1" pin="IO33"/>
+<wire x1="-10.16" y1="205.74" x2="-5.08" y2="205.74" width="0.1524" layer="91"/>
+<label x="-10.16" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="RVDIV2" gate="G$1" pin="1"/>
+<pinref part="RVDIV1" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="111.76" x2="218.44" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="116.84" x2="218.44" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="116.84" x2="213.36" y2="116.84" width="0.1524" layer="91"/>
+<junction x="218.44" y="116.84"/>
+<label x="213.36" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
