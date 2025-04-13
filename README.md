@@ -57,4 +57,5 @@
 * P chan fet chonky https://mou.sr/42aUOja
 * P chan power-so8 https://mou.sr/42BhcBs
 * 3.3v LDO regulator https://mou.sr/3RgIUy6
+* 20 awg shielded twisted pair cable https://a.co/d/8FQRYBL
   
