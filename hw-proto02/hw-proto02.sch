@@ -6962,6 +6962,11 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/ucc27523"&gt; Datasheet &lt;/a&gt;
 <wire x1="134.62" y1="198.12" x2="134.62" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="195.58" x2="76.2" y2="195.58" width="0.1524" layer="91"/>
 <junction x="76.2" y="195.58"/>
+<pinref part="CAN" gate="-2" pin="KL"/>
+<wire x1="154.94" y1="220.98" x2="152.4" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="220.98" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="195.58" x2="134.62" y2="195.58" width="0.1524" layer="91"/>
+<junction x="134.62" y="195.58"/>
 </segment>
 <segment>
 <pinref part="VR3V3" gate="G$1" pin="GND"/>
