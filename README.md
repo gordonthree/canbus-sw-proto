@@ -59,4 +59,6 @@
 * 3.3v LDO regulator https://mou.sr/3RgIUy6
 * 20 awg shielded twisted pair cable https://a.co/d/8FQRYBL
 * Texas Inst mosfet driver 5a inverted dual-ch SO8 https://mou.sr/3YqDYuk
+* STM32 Micro with CAN bus 20 pin ssop https://mou.sr/4jwf9Fx
+* ESP32 WROOM module with antenna https://mou.sr/3XWw2kl
   
