@@ -46,7 +46,7 @@
 ## Parts
 * 4x8 RGB matrix keypad https://www.adafruit.com/product/4020
 * ~~p-channel fet https://mou.sr/3RIdccZ~~
-* high side driver https://mou.sr/4jcK616
+* high side switch (ssr) https://mou.sr/4jcK616
 * 6 position terminal block https://mou.sr/4i4P92Y
 * heavy duty 6-pos terminal https://mou.sr/3R63QYn
 * heavy duty 3-pos terminal block https://mou.sr/3FTFHBW
@@ -58,4 +58,5 @@
 * P chan power-so8 https://mou.sr/42BhcBs
 * 3.3v LDO regulator https://mou.sr/3RgIUy6
 * 20 awg shielded twisted pair cable https://a.co/d/8FQRYBL
+* Texas Inst mosfet driver 5a inverted dual-ch SO8 https://mou.sr/3YqDYuk
   
