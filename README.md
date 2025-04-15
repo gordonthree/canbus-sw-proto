@@ -43,6 +43,16 @@
 * 1x 3-pos terminal for can bus
 * 1x serial programming header
 
+## Prototype 04 Three switches with STM32
+* 1x STM32F042C6
+* 1x CAN bus transciever
+* 2x p-channel FETs (30a max?) power-so8
+* 1x high side switch ICs (10a max?)
+* 1x dual chan driver TC4472
+* 1x 6-pos barrier strip V+ V+ SW1 SW2 SW3 GND
+* 1x 3-pos terminal for can bus
+* 1x serial programming header
+* 
 ## Parts
 * 4x8 RGB matrix keypad https://www.adafruit.com/product/4020
 * ~~p-channel fet https://mou.sr/3RIdccZ~~
