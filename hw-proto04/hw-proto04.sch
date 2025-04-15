@@ -6731,6 +6731,82 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 </deviceset>
 </devicesets>
 </library>
+<library name="TLV74333PDBVR">
+<description>&lt;300mA Low-Dropout (LDO) Regulator&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOT95P280X145-5N">
+<description>&lt;b&gt;TLV74333PDBVR&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="2" x="-1.25" y="0" dx="1.2" dy="0.6" layer="1"/>
+<smd name="3" x="-1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="4" x="1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="5" x="1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.1" y1="1.775" x2="2.1" y2="1.775" width="0.05" layer="51"/>
+<wire x1="2.1" y1="1.775" x2="2.1" y2="-1.775" width="0.05" layer="51"/>
+<wire x1="2.1" y1="-1.775" x2="-2.1" y2="-1.775" width="0.05" layer="51"/>
+<wire x1="-2.1" y1="-1.775" x2="-2.1" y2="1.775" width="0.05" layer="51"/>
+<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.1" layer="51"/>
+<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="0.5" x2="0.15" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.3" y1="1.45" x2="0.3" y2="1.45" width="0.2" layer="21"/>
+<wire x1="0.3" y1="1.45" x2="0.3" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="0.3" y1="-1.45" x2="-0.3" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="-0.3" y1="-1.45" x2="-0.3" y2="1.45" width="0.2" layer="21"/>
+<wire x1="-1.85" y1="1.5" x2="-0.65" y2="1.5" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TLV74333PDBVR">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="IN" x="0" y="0" length="middle"/>
+<pin name="GND" x="0" y="-2.54" length="middle"/>
+<pin name="EN" x="0" y="-5.08" length="middle"/>
+<pin name="NC" x="25.4" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="OUT" x="25.4" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TLV74333PDBVR" prefix="IC">
+<description>&lt;b&gt;300mA Low-Dropout (LDO) Regulator&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.ti.com/lit/gpn/tlv743p"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TLV74333PDBVR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-5N">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="300mA Low-Dropout (LDO) Regulator" constant="no"/>
+<attribute name="HEIGHT" value="1.45mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TLV74333PDBVR" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-TLV74333PDBVR" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV74333PDBVR?qs=EU6FO9ffTwe08kePOwcQGA%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6749,13 +6825,11 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="VR3V3" library="TSR_1-2433E" deviceset="TSR_1-2433E" device="" value="+3V3"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
-<part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
 <part name="VR5V0" library="TSR_1-2433E" deviceset="TSR_1-2433E" device="" value="+5V"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
@@ -6793,6 +6867,12 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="IC5" library="TLV74333PDBVR" deviceset="TLV74333PDBVR" device=""/>
+<part name="P+3" library="supply1" deviceset="+5V" device=""/>
+<part name="C3" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
+<part name="C4" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
+<part name="C5" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
+<part name="C6" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -6807,16 +6887,14 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 <instance part="GND5" gate="1" x="-60.96" y="152.4"/>
 <instance part="GND4" gate="1" x="132.08" y="73.66"/>
 <instance part="GND6" gate="1" x="76.2" y="190.5"/>
-<instance part="VR3V3" gate="G$1" x="165.1" y="144.78" rot="R90"/>
-<instance part="GND7" gate="1" x="167.64" y="127"/>
-<instance part="+3V1" gate="G$1" x="193.04" y="157.48"/>
+<instance part="GND7" gate="1" x="147.32" y="127"/>
+<instance part="+3V1" gate="G$1" x="200.66" y="170.18"/>
 <instance part="+3V2" gate="G$1" x="-50.8" y="256.54"/>
 <instance part="P+1" gate="1" x="-10.16" y="93.98"/>
 <instance part="P+2" gate="1" x="132.08" y="109.22"/>
-<instance part="P+3" gate="1" x="144.78" y="154.94"/>
 <instance part="P+4" gate="1" x="78.74" y="157.48"/>
 <instance part="VR5V0" gate="G$1" x="96.52" y="144.78" rot="R90"/>
-<instance part="GND8" gate="1" x="99.06" y="129.54"/>
+<instance part="GND8" gate="1" x="99.06" y="121.92"/>
 <instance part="P+5" gate="1" x="119.38" y="157.48"/>
 <instance part="+3V4" gate="G$1" x="142.24" y="231.14"/>
 <instance part="P+6" gate="1" x="73.66" y="231.14"/>
@@ -6853,6 +6931,12 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 <instance part="+3V5" gate="G$1" x="25.4" y="175.26"/>
 <instance part="+3V6" gate="G$1" x="30.48" y="256.54"/>
 <instance part="GND12" gate="1" x="-15.24" y="241.3"/>
+<instance part="IC5" gate="G$1" x="154.94" y="160.02"/>
+<instance part="P+3" gate="1" x="139.7" y="170.18"/>
+<instance part="C3" gate="G$1" x="139.7" y="147.32"/>
+<instance part="C4" gate="G$1" x="187.96" y="147.32"/>
+<instance part="C5" gate="G$1" x="78.74" y="137.16"/>
+<instance part="C6" gate="G$1" x="119.38" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -6966,14 +7050,17 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 <junction x="134.62" y="195.58"/>
 </segment>
 <segment>
-<pinref part="VR3V3" gate="G$1" pin="GND"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="167.64" y1="144.78" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="VR5V0" gate="G$1" pin="GND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="99.06" y1="144.78" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="144.78" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="129.54" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="129.54" x2="78.74" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="129.54" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
+<junction x="99.06" y="129.54"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="129.54" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="129.54" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
@@ -7013,6 +7100,20 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 <wire x1="-7.62" y1="246.38" x2="-15.24" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="246.38" x2="-15.24" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="GND"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="154.94" y1="157.48" x2="147.32" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="157.48" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="139.7" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="139.7" x2="139.7" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="139.7" x2="139.7" y2="142.24" width="0.1524" layer="91"/>
+<junction x="147.32" y="139.7"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="139.7" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="139.7" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SW1" class="0">
@@ -7099,13 +7200,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="VR3V3" gate="G$1" pin="VOUT+"/>
-<wire x1="170.18" y1="144.78" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="170.18" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="142.24" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="-25.4" y1="223.52" x2="-40.64" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="223.52" x2="-50.8" y2="223.52" width="0.1524" layer="91"/>
@@ -7163,6 +7257,16 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 <wire x1="30.48" y1="210.82" x2="30.48" y2="254" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="OUT"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="180.34" y1="157.48" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="157.48" x2="200.66" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="149.86" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
+<junction x="187.96" y="157.48"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -7215,18 +7319,14 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 <junction x="132.08" y="99.06"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="152.4" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="VR3V3" gate="G$1" pin="VIN+"/>
-<wire x1="144.78" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="142.24" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="1" pin="+12V"/>
-</segment>
-<segment>
 <pinref part="VR5V0" gate="G$1" pin="VIN+"/>
 <wire x1="96.52" y1="144.78" x2="96.52" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+12V"/>
 <wire x1="96.52" y1="142.24" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="142.24" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="139.7" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
+<junction x="78.74" y="142.24"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCC_1"/>
@@ -7246,6 +7346,9 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 <pinref part="P+5" gate="1" pin="+5V"/>
 <wire x1="101.6" y1="142.24" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="142.24" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="139.7" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
+<junction x="119.38" y="142.24"/>
 </segment>
 <segment>
 <pinref part="P+6" gate="1" pin="+5V"/>
@@ -7257,6 +7360,19 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32f042c4.pdf"&gt
 <wire x1="73.66" y1="218.44" x2="63.5" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="218.44" x2="63.5" y2="215.9" width="0.1524" layer="91"/>
 <junction x="73.66" y="218.44"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="IN"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="154.94" y1="160.02" x2="139.7" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="160.02" x2="139.7" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="EN"/>
+<wire x1="154.94" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="154.94" x2="139.7" y2="160.02" width="0.1524" layer="91"/>
+<junction x="139.7" y="160.02"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="154.94" x2="139.7" y2="149.86" width="0.1524" layer="91"/>
+<junction x="139.7" y="154.94"/>
 </segment>
 </net>
 <net name="CTL4" class="0">
