@@ -61,4 +61,6 @@
 * Texas Inst mosfet driver 5a inverted dual-ch SO8 https://mou.sr/3YqDYuk
 * STM32 Micro with CAN bus 20 pin ssop https://mou.sr/4jwf9Fx
 * ESP32 WROOM module with antenna https://mou.sr/3XWw2kl
+* STM32 Dev Board using inexepensive mcu https://www.digikey.com/short/59jq87v5
+* STM32 48-pin QFP STM32F042C6T7 https://mou.sr/3Eqjfjx
   
