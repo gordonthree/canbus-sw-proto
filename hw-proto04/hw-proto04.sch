@@ -7515,6 +7515,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="RDIV1" library="rcl" deviceset="R-US_" device="R0805"/>
 <part name="RDIV2" library="rcl" deviceset="R-US_" device="R0805"/>
 <part name="RBOOT0" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
+<part name="RTERM" library="rcl" deviceset="R-US_" device="R0805" value="120R"/>
 </parts>
 <sheets>
 <sheet>
@@ -7585,6 +7586,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="RDIV1" gate="G$1" x="60.96" y="139.7" rot="R90"/>
 <instance part="RDIV2" gate="G$1" x="60.96" y="121.92" rot="R90"/>
 <instance part="RBOOT0" gate="G$1" x="-50.8" y="223.52" rot="R90"/>
+<instance part="RTERM" gate="G$1" x="121.92" y="182.88" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7836,12 +7838,22 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="134.62" y1="215.9" x2="157.48" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="CAN" gate="-3" pin="KL"/>
 </segment>
+<segment>
+<pinref part="RTERM" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="182.88" x2="116.84" y2="182.88" width="0.1524" layer="91"/>
+<label x="111.76" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="CANL" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="CANL"/>
 <wire x1="157.48" y1="210.82" x2="124.46" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="CAN" gate="-1" pin="KL"/>
+</segment>
+<segment>
+<pinref part="RTERM" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="182.88" x2="127" y2="182.88" width="0.1524" layer="91"/>
+<label x="132.08" y="182.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
