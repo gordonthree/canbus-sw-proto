@@ -61,7 +61,7 @@
 * heavy duty 6-pos terminal https://mou.sr/3R63QYn
 * heavy duty 3-pos terminal block https://mou.sr/3FTFHBW
 * ATO fuse holder https://mou.sr/4cihwsZ
-* CANBUS Transceiver https://mou.sr/4llTLVa 
+* CANBUS Transceiver MCP2562T https://mou.sr/4llTLVa 
 * ESP32 Module https://mou.sr/4j1XWDP
 * Onboard DC-DC converter https://mou.sr/4i8eVTN
 * P chan fet chonky https://mou.sr/42aUOja
