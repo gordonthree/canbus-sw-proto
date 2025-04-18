@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,19 +39,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -7474,25 +7474,25 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="CAN" library="con-wago-500" deviceset="W237-103" device=""/>
 <part name="P+7" library="supply1" deviceset="+12V" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="J1" library="rcl" deviceset="R-US_" device="0204/7" value="10"/>
-<part name="J2" library="rcl" deviceset="R-US_" device="0204/7" value="10"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0204/7" value="10"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0204/7" value="10"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0204/7" value="100"/>
 <part name="CCAN1" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 <part name="CCAN2" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="Q1" library="transistor-vishay-pchan-pso8" deviceset="SQJ147ELP-T1_GE3" device=""/>
-<part name="Q2" library="transistor-vishay-pchan-pso8" deviceset="SQJ147ELP-T1_GE3" device=""/>
+<part name="Q1" library="transistor-vishay-pchan-pso8" deviceset="SQJ147ELP-T1_GE3" device="" value=""/>
+<part name="Q2" library="transistor-vishay-pchan-pso8" deviceset="SQJ147ELP-T1_GE3" device="" value=""/>
 <part name="CVDD2" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 <part name="CNRST" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 <part name="IC2" library="UCC27523DR-fet-driver" deviceset="UCC27523DR" device=""/>
 <part name="CDRV2" library="rcl" deviceset="C-US" device="C0805K" value="4u7"/>
 <part name="CDRV1" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="IC4" library="STM32F042C6T7" deviceset="STM32F042C6T7" device=""/>
+<part name="IC4" library="STM32F042C6T7" deviceset="STM32F042C6T7" device="" value="STM32F042"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="IC5" library="TLV74333PDBVR" deviceset="TLV74333PDBVR" device=""/>
+<part name="IC5" library="TLV74333PDBVR" deviceset="TLV74333PDBVR" device="" value="TLV74333P"/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="C3V1" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
 <part name="C3V2" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
@@ -7508,8 +7508,8 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="PRG" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
-<part name="SER" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
+<part name="SWLINK" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
+<part name="UART1" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="RDIV1" library="rcl" deviceset="R-US_" device="R0805"/>
@@ -7524,7 +7524,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instances>
 <instance part="IC1" gate="G$1" x="218.44" y="213.36"/>
 <instance part="IC3" gate="G$1" x="96.52" y="215.9"/>
-<instance part="PWR" gate="G$1" x="142.24" y="83.82"/>
+<instance part="PWR" gate="G$1" x="139.7" y="83.82"/>
 <instance part="GND1" gate="1" x="50.8" y="152.4"/>
 <instance part="GND2" gate="1" x="210.82" y="193.04"/>
 <instance part="GND4" gate="1" x="127" y="58.42"/>
@@ -7545,8 +7545,8 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="CAN" gate="-3" x="162.56" y="215.9" rot="R180"/>
 <instance part="P+7" gate="1" x="259.08" y="231.14"/>
 <instance part="GND9" gate="1" x="-30.48" y="27.94"/>
-<instance part="J1" gate="G$1" x="7.62" y="60.96" rot="R90"/>
-<instance part="J2" gate="G$1" x="45.72" y="58.42" rot="R90"/>
+<instance part="R3" gate="G$1" x="7.62" y="60.96" rot="R90"/>
+<instance part="R2" gate="G$1" x="45.72" y="58.42" rot="R90"/>
 <instance part="R1" gate="G$1" x="203.2" y="210.82"/>
 <instance part="CCAN1" gate="G$1" x="63.5" y="213.36"/>
 <instance part="CCAN2" gate="G$1" x="134.62" y="203.2"/>
@@ -7579,10 +7579,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND13" gate="1" x="-2.54" y="106.68"/>
 <instance part="GND5" gate="1" x="-33.02" y="165.1"/>
 <instance part="+3V3" gate="G$1" x="182.88" y="91.44"/>
-<instance part="PRG" gate="G$1" x="203.2" y="78.74" rot="R180"/>
-<instance part="SER" gate="G$1" x="238.76" y="76.2" rot="MR0"/>
-<instance part="+3V8" gate="G$1" x="226.06" y="91.44"/>
-<instance part="GND10" gate="1" x="226.06" y="63.5"/>
+<instance part="SWLINK" gate="G$1" x="203.2" y="78.74" rot="R180"/>
+<instance part="UART1" gate="G$1" x="236.22" y="81.28" rot="R180"/>
+<instance part="+3V8" gate="G$1" x="220.98" y="91.44"/>
+<instance part="GND10" gate="1" x="220.98" y="63.5"/>
 <instance part="RDIV1" gate="G$1" x="60.96" y="139.7" rot="R90"/>
 <instance part="RDIV2" gate="G$1" x="60.96" y="121.92" rot="R90"/>
 <instance part="RBOOT0" gate="G$1" x="-50.8" y="223.52" rot="R90"/>
@@ -7604,7 +7604,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="PWR" gate="G$1" pin="5"/>
-<wire x1="137.16" y1="73.66" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="73.66" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
 <label x="137.16" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -7653,7 +7653,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="127" y1="71.12" x2="127" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="PWR" gate="G$1" pin="6"/>
-<wire x1="142.24" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
@@ -7707,9 +7707,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="182.88" y1="73.66" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PRG" gate="G$1" pin="4"/>
-<wire x1="198.12" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="78.74" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="SWLINK" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="78.74" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CDRV1" gate="G$1" pin="2"/>
@@ -7758,10 +7758,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="-45.72" y="172.72"/>
 </segment>
 <segment>
-<pinref part="SER" gate="G$1" pin="1"/>
+<pinref part="UART1" gate="G$1" pin="2"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="233.68" y1="73.66" x2="226.06" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="73.66" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="81.28" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="81.28" x2="220.98" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SW1" class="0">
@@ -7793,7 +7793,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="PWR" gate="G$1" pin="3"/>
-<wire x1="137.16" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
 <label x="137.16" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -7826,7 +7826,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="PWR" gate="G$1" pin="4"/>
-<wire x1="137.16" y1="76.2" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
 <label x="137.16" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -7930,16 +7930,16 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="185.42" y="134.62"/>
 </segment>
 <segment>
-<pinref part="PRG" gate="G$1" pin="1"/>
+<pinref part="UART1" gate="G$1" pin="1"/>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+<wire x1="231.14" y1="83.82" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="83.82" x2="220.98" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SWLINK" gate="G$1" pin="1"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="198.12" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="81.28" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SER" gate="G$1" pin="4"/>
-<pinref part="+3V8" gate="G$1" pin="+3V3"/>
-<wire x1="233.68" y1="81.28" x2="226.06" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="81.28" x2="226.06" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -7984,11 +7984,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="PWR" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="127" y1="83.82" x2="127" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <pinref part="PWR" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="127" y1="81.28" x2="127" y2="83.82" width="0.1524" layer="91"/>
 <junction x="127" y="83.82"/>
 </segment>
@@ -8069,7 +8069,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <net name="N$3" class="0">
 <segment>
 <wire x1="0" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="43.18" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="OUTB"/>
 </segment>
@@ -8077,7 +8077,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <net name="N$4" class="0">
 <segment>
 <wire x1="0" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="48.26" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="OUTA"/>
 </segment>
@@ -8134,7 +8134,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="66.04" x2="7.62" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="12.7" y1="73.66" x2="7.62" y2="73.66" width="0.1524" layer="91"/>
@@ -8142,7 +8142,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="63.5" x2="45.72" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="G"/>
 <wire x1="50.8" y1="73.66" x2="45.72" y2="73.66" width="0.1524" layer="91"/>
@@ -8153,18 +8153,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="IN"/>
 <wire x1="208.28" y1="210.82" x2="218.44" y2="210.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="RXD0" class="0">
-<segment>
-<wire x1="63.5" y1="248.92" x2="58.42" y2="248.92" width="0.1524" layer="91"/>
-<label x="63.5" y="248.92" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="TXD0" class="0">
-<segment>
-<wire x1="63.5" y1="246.38" x2="58.42" y2="246.38" width="0.1524" layer="91"/>
-<label x="63.5" y="246.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -8182,9 +8170,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="30.48" y="195.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SER" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="76.2" x2="233.68" y2="76.2" width="0.1524" layer="91"/>
-<label x="228.6" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="UART1" gate="G$1" pin="3"/>
+<wire x1="228.6" y1="78.74" x2="231.14" y2="78.74" width="0.1524" layer="91"/>
+<label x="228.6" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RX1" class="0">
@@ -8194,9 +8182,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="30.48" y="198.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SER" gate="G$1" pin="3"/>
-<wire x1="228.6" y1="78.74" x2="233.68" y2="78.74" width="0.1524" layer="91"/>
-<label x="228.6" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="UART1" gate="G$1" pin="4"/>
+<wire x1="228.6" y1="76.2" x2="231.14" y2="76.2" width="0.1524" layer="91"/>
+<label x="228.6" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CAN_TX_ALT" class="0">
@@ -8221,9 +8209,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="20.32" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PRG" gate="G$1" pin="3"/>
-<wire x1="193.04" y1="76.2" x2="198.12" y2="76.2" width="0.1524" layer="91"/>
-<label x="193.04" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="SWLINK" gate="G$1" pin="4"/>
+<wire x1="195.58" y1="73.66" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
+<label x="195.58" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -8234,9 +8222,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="20.32" y="152.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PRG" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="78.74" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
-<label x="193.04" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="SWLINK" gate="G$1" pin="3"/>
+<wire x1="195.58" y1="76.2" x2="198.12" y2="76.2" width="0.1524" layer="91"/>
+<label x="195.58" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ADC2" class="0">
