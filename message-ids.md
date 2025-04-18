@@ -8,6 +8,9 @@ Borrowed from [Kvaser](https://kvaser.com/can-protocol-tutorial/)
 I'll make the link public readable eventually
 * https://docs.google.com/spreadsheets/d/1QVM61p1eubtlPMyJ19RLGeI64S9uRlPBL7KCpJWwj3g/edit?gid=0#gid=0
   
+### Notes
+* https://docs.google.com/spreadsheets/d/1eirT8LbSRl4j06BpwgsiE4PM_2BGH9UStdWLXwKvHJw/edit?gid=10#gid=10
+
 
 Outdated info below.
 ## Priority 0 (should these be error frames?)
