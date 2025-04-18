@@ -7453,7 +7453,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </class>
 </classes>
 <parts>
-<part name="IC1" library="VN5E160MSTR-E" deviceset="VN5E160MSTR-E" device="" value=""/>
+<part name="Q3" library="VN5E160MSTR-E" deviceset="VN5E160MSTR-E" device="" value=""/>
 <part name="IC3" library="MCP2562T-H_SN" deviceset="MCP2562T-H_SN" device="" value="MCP2562T"/>
 <part name="PWR" library="4DB-P108-06" deviceset="4DB-P108-06" device="" value=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -7500,11 +7500,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C5V2" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
 <part name="CVDD1" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 <part name="CVDA1" library="rcl" deviceset="C-US" device="C0603K" value="10n"/>
-<part name="CVDDIO2" library="rcl" deviceset="C-US" device="C0603K" value="4u7"/>
+<part name="CVDDIO2" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="CVDD" library="rcl" deviceset="C-US" device="C0603K" value="4u7"/>
 <part name="CVDA2" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
-<part name="CVDDIO" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
+<part name="CVDDIO" library="rcl" deviceset="C-US" device="C0603K" value="4u7"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
@@ -7522,7 +7522,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <plain>
 </plain>
 <instances>
-<instance part="IC1" gate="G$1" x="218.44" y="213.36"/>
+<instance part="Q3" gate="G$1" x="218.44" y="213.36"/>
 <instance part="IC3" gate="G$1" x="96.52" y="215.9"/>
 <instance part="PWR" gate="G$1" x="139.7" y="83.82"/>
 <instance part="GND1" gate="1" x="50.8" y="152.4"/>
@@ -7593,10 +7593,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <nets>
 <net name="SW3" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="OUT_1"/>
+<pinref part="Q3" gate="G$1" pin="OUT_1"/>
 <wire x1="251.46" y1="208.28" x2="254" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="254" y1="208.28" x2="264.16" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="OUT_2"/>
+<pinref part="Q3" gate="G$1" pin="OUT_2"/>
 <wire x1="251.46" y1="210.82" x2="254" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="254" y1="210.82" x2="254" y2="208.28" width="0.1524" layer="91"/>
 <junction x="254" y="208.28"/>
@@ -7656,7 +7656,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="139.7" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="Q3" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="218.44" y1="213.36" x2="210.82" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="213.36" x2="210.82" y2="195.58" width="0.1524" layer="91"/>
@@ -8008,11 +8008,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="76.2" y="147.32"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VCC_1"/>
+<pinref part="Q3" gate="G$1" pin="VCC_1"/>
 <pinref part="P+7" gate="1" pin="+12V"/>
 <wire x1="251.46" y1="205.74" x2="259.08" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="205.74" x2="259.08" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VCC_2"/>
+<pinref part="Q3" gate="G$1" pin="VCC_2"/>
 <wire x1="259.08" y1="213.36" x2="259.08" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="213.36" x2="259.08" y2="213.36" width="0.1524" layer="91"/>
 <junction x="259.08" y="213.36"/>
@@ -8151,7 +8151,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <net name="N$7" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="IC1" gate="G$1" pin="IN"/>
+<pinref part="Q3" gate="G$1" pin="IN"/>
 <wire x1="208.28" y1="210.82" x2="218.44" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
