@@ -11,6 +11,13 @@ I'll make the link public readable eventually
 ### Notes
 * https://docs.google.com/spreadsheets/d/1eirT8LbSRl4j06BpwgsiE4PM_2BGH9UStdWLXwKvHJw/edit?gid=10#gid=10
 
+### Example
+```
+// Constants for specific message IDs (example)
+#define ENGINE_TEMP_ID 0x100
+#define VEHICLE_SPEED_ID 0x200
+#define BATTERY_VOLTAGE_ID 0x300
+```
 
 Outdated info below.
 ## Priority 0 (should these be error frames?)
