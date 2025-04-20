@@ -52,7 +52,15 @@
 * 1x 6-pos barrier strip V+ V+ SW1 SW2 SW3 GND
 * 1x 3-pos terminal for can bus
 * 1x serial programming header
-* 
+ 
+## Interconnect for nodes
+* 4-pair cable
+* first pair for CANH-IN and CANL-IN
+* second pair for +VBAT and ground
+* third pair for CANH-OUT and CANL-OUT
+* fourth pair reserved
+
+
 ## Parts
 * 4x8 RGB matrix keypad https://www.adafruit.com/product/4020
 * high side switch (ssr) https://mou.sr/4jcK616
@@ -75,8 +83,6 @@
 * DC-DC Switching regulator TPS560430 automotive 5v output https://mou.sr/4cZ1YLn
 * DC-DC Sync-switching regulator LMR51625 automotive adjustable output https://mou.sr/4ipTHB4
 
-  
-
 ## remote node introductions
 * 10 seconds after boot remote nodes will start sending introduction messages 0x7XX
   * master will record message id and node id for each device
@@ -85,8 +91,9 @@
   * newly introduced nodes will be added to the database, recording their first-seen timestamp
   * master will respond with 0x401 to the node to acknowledge introduction
   * after reciving 0x401 the remote node will clear the introduction flag and enter normal operation
-* 30 seconds after no introductions the master will enumerate new nodes
+* after no introductions the master will enumerate new nodes
   * master will send 0x402:0x40A to the remote node and nodes will respond with 0x710:0x74F for each module the node offers
+  * modules will be recorded in database using unique 32-bit node ID and 16-bit module ID
   * master will send 0x401 to the remote node after recording each module 
 * after introductions and enumeration master will review database of nodes
   * nodes with a timestamp older than the current boot timestamp will be marked as not-present
@@ -95,9 +102,8 @@
     * if remote node does not respond mark the node missing in the database and alert user
 
 ## normal operation
-* after introduction flag is cleared nodes enter normal operation
-* nodes start sending 0x5XX data messages at 10hz
-* no acknowledgement of data messages
+* after introduction and enumeration are complete master will send 0x10A indicating nodes should begin normal operation
+* nodes start sending 0x5XX data messages at the configured rates
 
 ## request info flag
 * master will instruct display module to request info, providing a message id
