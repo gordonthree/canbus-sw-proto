@@ -1,6 +1,6 @@
 # CAN bus switch prototype
 
-Some circut board sketches in the free version of EagleCad
+Some circuit board sketches in the free version of EagleCad
 
 ## Brain board
 * Raspberry Pi 3 or 4?
