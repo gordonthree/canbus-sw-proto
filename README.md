@@ -53,12 +53,24 @@
 * 1x 3-pos terminal for can bus
 * 1x serial programming header
  
-## Interconnect for nodes
-* 4-pair cable
+## Minimum interconnect for nodes
+* 2-pair cable with drain
 * first pair for CANH-IN and CANL-IN
-* second pair for +VBAT and ground
+* second pair for CANH-OUT and CANL-OUT
+* drain is grounded at controller / hub
+
+## Ideal interconnect for nodes
+* 4-pair cable with drain
+* first pair for CANH-IN and CANL-IN
+* second and fourth pair for +VBAT and ground
 * third pair for CANH-OUT and CANL-OUT
-* fourth pair reserved
+* drain is grounded at controller / hub
+
+## CAN Hub
+* eight total de9 connectors, one input, one output, six spurs
+* each spur is wired in series, with Cx-IN and Cx-OUT daisy chained
+* spurs that are not connected have a shorting plug installed connecting Cx-IN to Cx-OUT
+
 
 
 ## Parts

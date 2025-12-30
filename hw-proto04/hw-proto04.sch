@@ -7443,6 +7443,61 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="FRAME_B_L">
+<frame x1="0" y1="0" x2="431.8" y2="279.4" columns="9" rows="6" layer="94" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FRAME_B_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt; B Size , 11 x 17 INCH, Landscape&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FRAME_B_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="325.12" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7453,9 +7508,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </class>
 </classes>
 <parts>
-<part name="Q3" library="VN5E160MSTR-E" deviceset="VN5E160MSTR-E" device="" value=""/>
+<part name="Q3" library="VN5E160MSTR-E" deviceset="VN5E160MSTR-E" device="" value="SMART FET"/>
 <part name="IC3" library="MCP2562T-H_SN" deviceset="MCP2562T-H_SN" device="" value="MCP2562T"/>
-<part name="PWR" library="4DB-P108-06" deviceset="4DB-P108-06" device="" value=""/>
+<part name="PWR_IN" library="4DB-P108-06" deviceset="4DB-P108-06" device="" value=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -7480,11 +7535,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="CCAN1" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 <part name="CCAN2" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="Q1" library="transistor-vishay-pchan-pso8" deviceset="SQJ147ELP-T1_GE3" device="" value=""/>
-<part name="Q2" library="transistor-vishay-pchan-pso8" deviceset="SQJ147ELP-T1_GE3" device="" value=""/>
+<part name="Q1" library="transistor-vishay-pchan-pso8" deviceset="SQJ147ELP-T1_GE3" device="" value="FET SW"/>
+<part name="Q2" library="transistor-vishay-pchan-pso8" deviceset="SQJ147ELP-T1_GE3" device="" value="FET SW"/>
 <part name="CVDD2" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 <part name="CNRST" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
-<part name="IC2" library="UCC27523DR-fet-driver" deviceset="UCC27523DR" device=""/>
+<part name="IC2" library="UCC27523DR-fet-driver" deviceset="UCC27523DR" device="" value="FET DRIVER"/>
 <part name="CDRV2" library="rcl" deviceset="C-US" device="C0805K" value="4u7"/>
 <part name="CDRV1" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -7516,15 +7571,22 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="RDIV2" library="rcl" deviceset="R-US_" device="R0805"/>
 <part name="RBOOT0" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
 <part name="RTERM" library="rcl" deviceset="R-US_" device="R0805" value="120R"/>
+<part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="215.138" y="24.384" size="1.778" layer="91" font="vector" ratio="12">Prototype DC load controller
+2x High current 
+1x Medium current switch 
+STM32 Micro with protected CANBUS interface</text>
+<text x="307.34" y="7.62" size="1.778" layer="91" font="vector" ratio="12">04</text>
+<text x="217.932" y="6.858" size="1.778" layer="91" font="vector" ratio="12">(C) 2025 G MCLELLAN</text>
 </plain>
 <instances>
 <instance part="Q3" gate="G$1" x="218.44" y="213.36"/>
 <instance part="IC3" gate="G$1" x="96.52" y="215.9"/>
-<instance part="PWR" gate="G$1" x="139.7" y="83.82"/>
+<instance part="PWR_IN" gate="G$1" x="139.7" y="83.82"/>
 <instance part="GND1" gate="1" x="50.8" y="152.4"/>
 <instance part="GND2" gate="1" x="210.82" y="193.04"/>
 <instance part="GND4" gate="1" x="127" y="58.42"/>
@@ -7587,6 +7649,8 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="RDIV2" gate="G$1" x="60.96" y="121.92" rot="R90"/>
 <instance part="RBOOT0" gate="G$1" x="-50.8" y="223.52" rot="R90"/>
 <instance part="RTERM" gate="G$1" x="121.92" y="182.88" rot="R180"/>
+<instance part="FRAME1" gate="G$1" x="-111.76" y="0"/>
+<instance part="FRAME1" gate="G$2" x="213.36" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -7603,7 +7667,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="264.16" y="208.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWR" gate="G$1" pin="5"/>
+<pinref part="PWR_IN" gate="G$1" pin="5"/>
 <wire x1="137.16" y1="73.66" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
 <label x="137.16" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7652,7 +7716,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="127" y1="71.12" x2="127" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PWR" gate="G$1" pin="6"/>
+<pinref part="PWR_IN" gate="G$1" pin="6"/>
 <wire x1="139.7" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -7792,7 +7856,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="40.64" y="78.74"/>
 </segment>
 <segment>
-<pinref part="PWR" gate="G$1" pin="3"/>
+<pinref part="PWR_IN" gate="G$1" pin="3"/>
 <wire x1="137.16" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
 <label x="137.16" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7825,7 +7889,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="81.28" y="78.74"/>
 </segment>
 <segment>
-<pinref part="PWR" gate="G$1" pin="4"/>
+<pinref part="PWR_IN" gate="G$1" pin="4"/>
 <wire x1="137.16" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
 <label x="137.16" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7983,11 +8047,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-10.16" y1="76.2" x2="-10.16" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PWR" gate="G$1" pin="1"/>
+<pinref part="PWR_IN" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="127" y1="83.82" x2="127" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
-<pinref part="PWR" gate="G$1" pin="2"/>
+<pinref part="PWR_IN" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="127" y1="81.28" x2="127" y2="83.82" width="0.1524" layer="91"/>
 <junction x="127" y="83.82"/>
@@ -8257,4 +8321,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
