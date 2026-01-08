@@ -7404,18 +7404,18 @@ Standard adjustable voltage regulator but in SMD form. Spark Fun Electronics SKU
 <part name="RDIV1" library="rcl" deviceset="R-US_" device="R0805"/>
 <part name="RDIV2" library="rcl" deviceset="R-US_" device="R0805"/>
 <part name="RBOOT0" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
-<part name="RTERM" library="rcl" deviceset="R-US_" device="0204/7" value="120R"/>
+<part name="R_TRM" library="rcl" deviceset="R-US_" device="0204/7" value="120R"/>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="Q1" library="BTS50010-1TAD" deviceset="BTS50010-1TAD" device="" value="BTS50010"/>
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0207/12" value="100"/>
+<part name="R_IN" library="rcl" deviceset="R-US_" device="0207/12" value="4K7"/>
 <part name="+12V" library="VP0265840000G" deviceset="VP0265840000G" device="" value=""/>
 <part name="LOAD+" library="VP0265840000G" deviceset="VP0265840000G" device="" value=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
-<part name="TERM" library="con-molex" deviceset="22-23-2021" device=""/>
+<part name="TERM" library="con-molex" deviceset="22-23-2021" device="" value=""/>
 <part name="VR5V0" library="SparkFun-PowerIC" deviceset="V_REG_LM1117" device="SOT223"/>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="VR3V3" library="SparkFun-PowerIC" deviceset="V_REG_LM1117" device="SOT223"/>
@@ -7429,6 +7429,13 @@ Standard adjustable voltage regulator but in SMD form. Spark Fun Electronics SKU
 <part name="C3VIN" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
 <part name="C3VOUT" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="R_ISPD" library="rcl" deviceset="R-US_" device="0207/12" value="1K0"/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="J_IS" library="rcl" deviceset="R-US_" device="0207/12" value="0R0"/>
+<part name="TP_IS" library="con-molex" deviceset="22-23-2021" device="" value=""/>
+<part name="TP_IN" library="con-molex" deviceset="22-23-2021" device="" value=""/>
+<part name="R_GND" library="rcl" deviceset="R-US_" device="R1206W" value="0R0"/>
+<part name="R_IS" library="rcl" deviceset="R-US_" device="0207/12" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -7476,13 +7483,13 @@ STM32 Micro with isolated CANBUS interface</text>
 <instance part="RDIV1" gate="G$1" x="76.2" y="139.7" rot="R90"/>
 <instance part="RDIV2" gate="G$1" x="76.2" y="121.92" rot="R90"/>
 <instance part="RBOOT0" gate="G$1" x="-50.8" y="223.52" rot="R90"/>
-<instance part="RTERM" gate="G$1" x="121.92" y="182.88" rot="R180"/>
+<instance part="R_TRM" gate="G$1" x="121.92" y="182.88" rot="R180"/>
 <instance part="FRAME1" gate="G$1" x="-111.76" y="0"/>
 <instance part="FRAME1" gate="G$2" x="213.36" y="0"/>
 <instance part="Q1" gate="G1" x="213.36" y="167.64"/>
 <instance part="P+1" gate="1" x="182.88" y="185.42"/>
 <instance part="GND3" gate="1" x="271.78" y="147.32"/>
-<instance part="R2" gate="G$1" x="198.12" y="160.02"/>
+<instance part="R_IN" gate="G$1" x="198.12" y="160.02"/>
 <instance part="+12V" gate="G$1" x="101.6" y="76.2"/>
 <instance part="LOAD+" gate="G$1" x="137.16" y="76.2" rot="MR180"/>
 <instance part="GND2" gate="1" x="86.36" y="60.96"/>
@@ -7503,6 +7510,15 @@ STM32 Micro with isolated CANBUS interface</text>
 <instance part="C3VIN" gate="G$1" x="-33.02" y="40.64"/>
 <instance part="C3VOUT" gate="G$1" x="2.54" y="40.64"/>
 <instance part="GND9" gate="1" x="76.2" y="106.68"/>
+<instance part="R_ISPD" gate="G$1" x="195.58" y="142.24" rot="R90"/>
+<instance part="GND14" gate="1" x="195.58" y="127"/>
+<instance part="J_IS" gate="G$1" x="177.8" y="154.94" rot="R180"/>
+<instance part="TP_IS" gate="-1" x="167.64" y="149.86"/>
+<instance part="TP_IS" gate="-2" x="167.64" y="147.32"/>
+<instance part="TP_IN" gate="-1" x="160.02" y="167.64"/>
+<instance part="TP_IN" gate="-2" x="160.02" y="165.1"/>
+<instance part="R_GND" gate="G$1" x="271.78" y="157.48" rot="R90"/>
+<instance part="R_IS" gate="G$1" x="144.78" y="154.94" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7629,12 +7645,6 @@ STM32 Micro with isolated CANBUS interface</text>
 <wire x1="220.98" y1="81.28" x2="220.98" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="Q1" gate="G1" pin="GND"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="236.22" y1="165.1" x2="271.78" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="165.1" x2="271.78" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="+12V" gate="G$1" pin="2_2"/>
 <wire x1="91.44" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="71.12" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
@@ -7685,6 +7695,16 @@ STM32 Micro with isolated CANBUS interface</text>
 <wire x1="76.2" y1="109.22" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="R_ISPD" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="129.54" x2="195.58" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="R_GND" gate="G$1" pin="1"/>
+<wire x1="271.78" y1="149.86" x2="271.78" y2="152.4" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="CANH" class="0">
 <segment>
@@ -7695,7 +7715,7 @@ STM32 Micro with isolated CANBUS interface</text>
 <pinref part="CAN" gate="-3" pin="KL"/>
 </segment>
 <segment>
-<pinref part="RTERM" gate="G$1" pin="2"/>
+<pinref part="R_TRM" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="182.88" x2="116.84" y2="182.88" width="0.1524" layer="91"/>
 <label x="111.76" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7878,9 +7898,16 @@ STM32 Micro with isolated CANBUS interface</text>
 <label x="30.48" y="205.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="160.02" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
-<label x="182.88" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R_IN" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="160.02" x2="157.48" y2="160.02" width="0.1524" layer="91"/>
+<label x="132.08" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="TP_IN" gate="-1" pin="S"/>
+<pinref part="TP_IN" gate="-2" pin="S"/>
+<wire x1="157.48" y1="160.02" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="167.64" x2="157.48" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="165.1" x2="157.48" y2="160.02" width="0.1524" layer="91"/>
+<junction x="157.48" y="165.1"/>
+<junction x="157.48" y="160.02"/>
 </segment>
 </net>
 <net name="CTL2" class="0">
@@ -8023,17 +8050,62 @@ STM32 Micro with isolated CANBUS interface</text>
 <net name="CTL3`" class="0">
 <segment>
 <pinref part="Q1" gate="G1" pin="IN"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R_IN" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="160.02" x2="208.28" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="RTERM" gate="G$1" pin="1"/>
+<pinref part="R_TRM" gate="G$1" pin="1"/>
 <wire x1="127" y1="182.88" x2="129.54" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="182.88" x2="129.54" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="TERM" gate="-1" pin="S"/>
 <wire x1="129.54" y1="175.26" x2="132.08" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IS" class="0">
+<segment>
+<pinref part="Q1" gate="G1" pin="IS"/>
+<pinref part="R_ISPD" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="154.94" x2="195.58" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="154.94" x2="195.58" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="154.94" x2="182.88" y2="154.94" width="0.1524" layer="91"/>
+<junction x="195.58" y="154.94"/>
+<pinref part="J_IS" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="ADC1" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="PA1"/>
+<wire x1="-22.86" y1="185.42" x2="-17.78" y2="185.42" width="0.1524" layer="91"/>
+<label x="-22.86" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<label x="132.08" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R_IS" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="Q1" gate="G1" pin="GND"/>
+<wire x1="236.22" y1="165.1" x2="271.78" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="R_GND" gate="G$1" pin="2"/>
+<wire x1="271.78" y1="162.56" x2="271.78" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="TP_IS" gate="-2" pin="S"/>
+<pinref part="TP_IS" gate="-1" pin="S"/>
+<wire x1="165.1" y1="149.86" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="R_IS" gate="G$1" pin="1"/>
+<pinref part="J_IS" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="154.94" x2="165.1" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="154.94" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="149.86" x2="165.1" y2="154.94" width="0.1524" layer="91"/>
+<junction x="165.1" y="149.86"/>
+<junction x="165.1" y="154.94"/>
 </segment>
 </net>
 </nets>
