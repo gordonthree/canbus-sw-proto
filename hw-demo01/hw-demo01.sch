@@ -7422,12 +7422,12 @@ Standard adjustable voltage regulator but in SMD form. Spark Fun Electronics SKU
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
-<part name="C5VIN" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
-<part name="C5VOUT" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
+<part name="C12VIN" library="rcl" deviceset="C-US" device="C1206K" value="1u"/>
+<part name="C5VOUT" library="rcl" deviceset="C-US" device="C0805K" value="1u"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="C3VIN" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
-<part name="C3VOUT" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
+<part name="C5VIN" library="rcl" deviceset="C-US" device="C1206K" value="1u"/>
+<part name="C3VOUT" library="rcl" deviceset="C-US" device="C0805K" value="1u"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="R_ISPD" library="rcl" deviceset="R-US_" device="0207/12" value="1K0"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
@@ -7503,11 +7503,11 @@ STM32 Micro with isolated CANBUS interface</text>
 <instance part="P+5" gate="1" x="2.54" y="99.06"/>
 <instance part="P+7" gate="1" x="-33.02" y="55.88"/>
 <instance part="+3V1" gate="G$1" x="2.54" y="55.88"/>
-<instance part="C5VIN" gate="G$1" x="-33.02" y="83.82"/>
+<instance part="C12VIN" gate="G$1" x="-33.02" y="83.82"/>
 <instance part="C5VOUT" gate="G$1" x="2.54" y="83.82"/>
 <instance part="GND7" gate="1" x="-15.24" y="66.04"/>
 <instance part="GND8" gate="1" x="-15.24" y="27.94"/>
-<instance part="C3VIN" gate="G$1" x="-33.02" y="40.64"/>
+<instance part="C5VIN" gate="G$1" x="-33.02" y="40.64"/>
 <instance part="C3VOUT" gate="G$1" x="2.54" y="40.64"/>
 <instance part="GND9" gate="1" x="76.2" y="106.68"/>
 <instance part="R_ISPD" gate="G$1" x="195.58" y="142.24" rot="R90"/>
@@ -7665,7 +7665,7 @@ STM32 Micro with isolated CANBUS interface</text>
 <junction x="121.92" y="71.12"/>
 </segment>
 <segment>
-<pinref part="C5VIN" gate="G$1" pin="2"/>
+<pinref part="C12VIN" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="78.74" x2="-33.02" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-33.02" y1="73.66" x2="-15.24" y2="73.66" width="0.1524" layer="91"/>
@@ -7678,7 +7678,7 @@ STM32 Micro with isolated CANBUS interface</text>
 <wire x1="2.54" y1="73.66" x2="-15.24" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C3VIN" gate="G$1" pin="2"/>
+<pinref part="C5VIN" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="35.56" x2="-33.02" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="-33.02" y1="33.02" x2="-15.24" y2="33.02" width="0.1524" layer="91"/>
@@ -7850,7 +7850,7 @@ STM32 Micro with isolated CANBUS interface</text>
 <pinref part="P+3" gate="1" pin="+12V"/>
 <wire x1="-22.86" y1="91.44" x2="-33.02" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="91.44" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C5VIN" gate="G$1" pin="1"/>
+<pinref part="C12VIN" gate="G$1" pin="1"/>
 <wire x1="-33.02" y1="86.36" x2="-33.02" y2="91.44" width="0.1524" layer="91"/>
 <junction x="-33.02" y="91.44"/>
 </segment>
@@ -7882,7 +7882,7 @@ STM32 Micro with isolated CANBUS interface</text>
 <junction x="-5.08" y="91.44"/>
 </segment>
 <segment>
-<pinref part="C3VIN" gate="G$1" pin="1"/>
+<pinref part="C5VIN" gate="G$1" pin="1"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="-33.02" y1="43.18" x2="-33.02" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="VR3V3" gate="G$1" pin="IN"/>
