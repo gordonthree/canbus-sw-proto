@@ -14,6 +14,14 @@ Some circuit board sketches in the free version of EagleCad
 * 1x 4-pos screw terminal for power + can
 * 
 
+## Demo 01 - Single switch
+* 1x STM32F042
+* 1x Isolated CAN bus transciever
+* 1x Infineon BTS50010-1TAD PROFet Smart High Side Switch
+* Voltage monitoring via resistor divider
+* Current monitoring via Smart Switch
+* Onboard 3v3 and 5v linear regulators
+  
 ## Prototype 01 Four switches
 * 1x ESP32
 * 1x CAN bus transciever
@@ -33,14 +41,6 @@ Some circuit board sketches in the free version of EagleCad
 * 1x 6-pos barrier strip V+ V+ SW1 SW2 SW3 GND
 * 1x 3-pos terminal for can bus
 * 1x serial programming header
-
-## Demo 01 - Single switch
-* 1x STM32F042
-* 1x Isolated CAN bus transciever
-* 1x Infineon BTS50010-1TAD PROFet Smart High Side Switch
-* Voltage monitoring via resistor divider
-* Current monitoring via Smart Switch
-* Onboard 3v3 and 5v linear regulators
   
 ## Prototype 03 Six switch
 * 1x ESP32
