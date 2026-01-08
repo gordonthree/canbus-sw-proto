@@ -2005,7 +2005,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="50.8" y="30.48" size="0.8128" layer="25" font="vector" ratio="14"/>
 <attribute name="VALUE" x="50.8" y="21.59" size="1.016" layer="27" ratio="10"/>
 </element>
-<element name="R_GND" library="rcl" package="R1206W" value="0R0" x="38.1" y="50.8" rot="R270"/>
+<element name="R_GND" library="rcl" package="R1206W" value="0R0" x="38.1" y="50.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="36.195" y="54.61" size="0.6096" layer="25" font="vector" ratio="14" rot="R270"/>
+</element>
 <element name="R_IS" library="rcl" package="0207/12" value="10K" x="27.94" y="27.94" smashed="yes" rot="R180">
 <attribute name="NAME" x="26.035" y="27.432" size="0.8128" layer="25" ratio="14"/>
 </element>
@@ -2017,7 +2019,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MANUFACTURER_PART_NUMBER" value="BTS500101TADATMA2" x="34.29" y="37.465" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="726-BTS500101TADATM2" x="34.29" y="37.465" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C_VS" library="rcl" package="C0603K" value="100n" x="40.64" y="55.5625" rot="R180"/>
+<element name="C_VS" library="rcl" package="C0603K" value="100n" x="40.64" y="55.5625" smashed="yes" rot="R180">
+<attribute name="NAME" x="40.17" y="57.4525" size="0.6096" layer="25" font="vector" ratio="14" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="SW3">
@@ -2037,43 +2041,43 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="33.655" y="41.5925"/>
 <vertex x="17.78" y="41.5925"/>
 </polygon>
-<via x="25.4" y="44.45" extent="1-16" drill="0.5"/>
-<via x="25.4" y="45.72" extent="1-16" drill="0.5"/>
-<via x="25.4" y="46.99" extent="1-16" drill="0.5"/>
-<via x="25.4" y="48.26" extent="1-16" drill="0.5"/>
+<wire x1="25.4" y1="44.45" x2="25.4" y2="44.45" width="0" layer="19" extent="1-16"/>
+<via x="25.4" y="45.72" extent="1-16" drill="0.6"/>
+<via x="25.4" y="46.99" extent="1-16" drill="0.6"/>
+<via x="25.4" y="48.26" extent="1-16" drill="0.6"/>
 <via x="30.48" y="48.26" extent="1-16" drill="0.5"/>
 <via x="31.75" y="48.26" extent="1-16" drill="0.5"/>
 <via x="33.02" y="48.26" extent="1-16" drill="0.5"/>
 <via x="33.02" y="49.53" extent="1-16" drill="0.5"/>
 <via x="31.75" y="49.53" extent="1-16" drill="0.5"/>
 <via x="30.48" y="49.53" extent="1-16" drill="0.5"/>
-<via x="25.4" y="49.53" extent="1-16" drill="0.5"/>
-<via x="24.13" y="45.72" extent="1-16" drill="0.5"/>
-<via x="24.13" y="44.45" extent="1-16" drill="0.5"/>
-<via x="22.86" y="45.72" extent="1-16" drill="0.5"/>
-<via x="24.13" y="43.18" extent="1-16" drill="0.5"/>
-<via x="25.4" y="43.18" extent="1-16" drill="0.5"/>
-<via x="25.4" y="50.8" extent="1-16" drill="0.5"/>
-<via x="24.13" y="50.8" extent="1-16" drill="0.5"/>
-<via x="22.86" y="50.8" extent="1-16" drill="0.5"/>
-<via x="21.59" y="50.8" extent="1-16" drill="0.5"/>
-<via x="21.59" y="45.72" extent="1-16" drill="0.5"/>
-<via x="25.4" y="55.88" extent="1-16" drill="0.5"/>
-<via x="25.4" y="57.15" extent="1-16" drill="0.5"/>
-<via x="25.4" y="58.42" extent="1-16" drill="0.5"/>
-<via x="25.4" y="59.69" extent="1-16" drill="0.5"/>
-<via x="21.59" y="55.88" extent="1-16" drill="0.5"/>
-<via x="22.86" y="55.88" extent="1-16" drill="0.5"/>
-<via x="24.13" y="55.88" extent="1-16" drill="0.5"/>
-<via x="20.32" y="45.72" extent="1-16" drill="0.5"/>
-<via x="20.32" y="46.99" extent="1-16" drill="0.5"/>
-<via x="20.32" y="48.26" extent="1-16" drill="0.5"/>
-<via x="20.32" y="49.53" extent="1-16" drill="0.5"/>
-<via x="20.32" y="50.8" extent="1-16" drill="0.5"/>
-<via x="20.32" y="55.88" extent="1-16" drill="0.5"/>
-<via x="20.32" y="57.15" extent="1-16" drill="0.5"/>
-<via x="20.32" y="58.42" extent="1-16" drill="0.5"/>
-<via x="20.32" y="59.69" extent="1-16" drill="0.5"/>
+<via x="25.4" y="49.53" extent="1-16" drill="0.6"/>
+<via x="24.13" y="45.72" extent="1-16" drill="0.6"/>
+<wire x1="24.13" y1="44.45" x2="24.13" y2="44.45" width="0" layer="19" extent="1-16"/>
+<via x="22.86" y="45.72" extent="1-16" drill="0.6"/>
+<wire x1="24.13" y1="43.18" x2="24.13" y2="43.18" width="0" layer="19" extent="1-16"/>
+<wire x1="25.4" y1="43.18" x2="25.4" y2="43.18" width="0" layer="19" extent="1-16"/>
+<via x="25.4" y="50.8" extent="1-16" drill="0.6"/>
+<via x="24.13" y="50.8" extent="1-16" drill="0.6"/>
+<via x="22.86" y="50.8" extent="1-16" drill="0.6"/>
+<via x="21.59" y="50.8" extent="1-16" drill="0.6"/>
+<via x="21.59" y="45.72" extent="1-16" drill="0.6"/>
+<via x="25.4" y="55.88" extent="1-16" drill="0.6"/>
+<via x="25.4" y="57.15" extent="1-16" drill="0.6"/>
+<via x="25.4" y="58.42" extent="1-16" drill="0.6"/>
+<via x="25.4" y="59.69" extent="1-16" drill="0.6"/>
+<via x="21.59" y="55.88" extent="1-16" drill="0.6"/>
+<via x="22.86" y="55.88" extent="1-16" drill="0.6"/>
+<via x="24.13" y="55.88" extent="1-16" drill="0.6"/>
+<via x="20.32" y="45.72" extent="1-16" drill="0.6"/>
+<via x="20.32" y="46.99" extent="1-16" drill="0.6"/>
+<via x="20.32" y="48.26" extent="1-16" drill="0.6"/>
+<via x="20.32" y="49.53" extent="1-16" drill="0.6"/>
+<via x="20.32" y="50.8" extent="1-16" drill="0.6"/>
+<via x="20.32" y="55.88" extent="1-16" drill="0.6"/>
+<via x="20.32" y="57.15" extent="1-16" drill="0.6"/>
+<via x="20.32" y="58.42" extent="1-16" drill="0.6"/>
+<via x="20.32" y="59.69" extent="1-16" drill="0.6"/>
 <contactref element="Q1" pad="5"/>
 <contactref element="Q1" pad="7"/>
 <contactref element="Q1" pad="6"/>
@@ -2137,8 +2141,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="+12V" pad="2_1"/>
 <contactref element="LOAD+" pad="1_2"/>
 <contactref element="LOAD+" pad="1_1"/>
-<via x="39.37" y="52.3875" extent="1-16" drill="0.6"/>
-<via x="39.37" y="53.6575" extent="1-16" drill="0.6"/>
+<via x="39.6875" y="52.3875" extent="1-16" drill="0.6"/>
+<via x="39.6875" y="53.6575" extent="1-16" drill="0.6"/>
 <polygon width="0.254" layer="1" rank="5">
 <vertex x="1.27" y="29.21"/>
 <vertex x="64.4525" y="29.21"/>
@@ -2184,6 +2188,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="16.1925" y="17.4625" extent="1-16" drill="0.381"/>
 <contactref element="C_VS" pad="2"/>
 <via x="28.8925" y="20.6375" extent="1-16" drill="0.381"/>
+<via x="38.1" y="54.61" extent="1-16" drill="0.6"/>
+<via x="38.1" y="55.88" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="CANH">
 <contactref element="IC3" pad="7"/>
@@ -2395,27 +2401,27 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="43.18" y="35.56" extent="1-16" drill="0.6"/>
 <via x="43.18" y="36.83" extent="1-16" drill="0.6"/>
 <via x="43.18" y="38.1" extent="1-16" drill="0.6"/>
-<via x="24.13" y="30.48" extent="1-16" drill="0.6"/>
-<via x="22.86" y="30.48" extent="1-16" drill="0.6"/>
-<via x="21.59" y="30.48" extent="1-16" drill="0.6"/>
-<via x="21.59" y="31.75" extent="1-16" drill="0.6"/>
-<via x="22.86" y="31.75" extent="1-16" drill="0.6"/>
-<via x="24.13" y="31.75" extent="1-16" drill="0.6"/>
-<via x="24.13" y="33.02" extent="1-16" drill="0.6"/>
-<via x="22.86" y="33.02" extent="1-16" drill="0.6"/>
-<via x="21.59" y="33.02" extent="1-16" drill="0.6"/>
-<via x="21.59" y="34.29" extent="1-16" drill="0.6"/>
-<via x="22.86" y="34.29" extent="1-16" drill="0.6"/>
-<via x="24.13" y="34.29" extent="1-16" drill="0.6"/>
-<via x="24.13" y="35.56" extent="1-16" drill="0.6"/>
-<via x="22.86" y="35.56" extent="1-16" drill="0.6"/>
-<via x="21.59" y="35.56" extent="1-16" drill="0.6"/>
-<via x="21.59" y="36.83" extent="1-16" drill="0.6"/>
-<via x="22.86" y="36.83" extent="1-16" drill="0.6"/>
-<via x="24.13" y="36.83" extent="1-16" drill="0.6"/>
-<via x="24.13" y="38.1" extent="1-16" drill="0.6"/>
-<via x="22.86" y="38.1" extent="1-16" drill="0.6"/>
-<via x="21.59" y="38.1" extent="1-16" drill="0.6"/>
+<via x="27.94" y="30.48" extent="1-16" drill="0.6"/>
+<via x="26.67" y="30.48" extent="1-16" drill="0.6"/>
+<via x="25.4" y="30.48" extent="1-16" drill="0.6"/>
+<via x="25.4" y="31.75" extent="1-16" drill="0.6"/>
+<via x="26.67" y="31.75" extent="1-16" drill="0.6"/>
+<via x="27.94" y="31.75" extent="1-16" drill="0.6"/>
+<via x="27.94" y="33.02" extent="1-16" drill="0.6"/>
+<via x="26.67" y="33.02" extent="1-16" drill="0.6"/>
+<via x="25.4" y="33.02" extent="1-16" drill="0.6"/>
+<via x="25.4" y="34.29" extent="1-16" drill="0.6"/>
+<via x="26.67" y="34.29" extent="1-16" drill="0.6"/>
+<via x="27.94" y="34.29" extent="1-16" drill="0.6"/>
+<via x="27.94" y="35.56" extent="1-16" drill="0.6"/>
+<via x="26.67" y="35.56" extent="1-16" drill="0.6"/>
+<via x="25.4" y="35.56" extent="1-16" drill="0.6"/>
+<via x="25.4" y="36.83" extent="1-16" drill="0.6"/>
+<via x="26.67" y="36.83" extent="1-16" drill="0.6"/>
+<via x="27.94" y="36.83" extent="1-16" drill="0.6"/>
+<via x="27.94" y="38.1" extent="1-16" drill="0.6"/>
+<via x="26.67" y="38.1" extent="1-16" drill="0.6"/>
+<via x="25.4" y="38.1" extent="1-16" drill="0.6"/>
 <via x="44.45" y="55.88" extent="1-16" drill="0.6"/>
 <via x="45.72" y="55.88" extent="1-16" drill="0.6"/>
 <via x="46.99" y="55.88" extent="1-16" drill="0.6"/>
