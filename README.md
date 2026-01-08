@@ -14,7 +14,8 @@ Some circuit board sketches in the free version of EagleCad
 * 1x 4-pos screw terminal for power + can
 * 
 
-## Demo 01 - Single switch
+## Demo 01 - Single switch 
+* <img width="480" alt="PCB rendering" src="https://github.com/gordonthree/canbus-sw-proto/blob/main/hw-demo01/pcb-top.png?raw=true"><br>
 * 1x STM32F042
 * 1x Isolated CAN bus transciever
 * 1x Infineon BTS50010-1TAD PROFet Smart High Side Switch
