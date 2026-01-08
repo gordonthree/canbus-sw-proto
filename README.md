@@ -22,6 +22,8 @@ Some circuit board sketches in the free version of EagleCad
 * Voltage monitoring via resistor divider
 * Current monitoring via Smart Switch
 * Onboard 3v3 and 5v linear regulators
+* Headers for SWLINK and UART
+* Wago style screw terminal connector for 2-wire + drain CANBUS cable
   
 ## Prototype 01 Four switches
 * 1x ESP32
