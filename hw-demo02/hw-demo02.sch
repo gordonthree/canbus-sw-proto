@@ -6842,15 +6842,15 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="R_ISPD" library="rcl" deviceset="R-US_" device="0207/12" value="1K0"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="J_IS" library="rcl" deviceset="R-US_" device="0207/12" value="0R0"/>
+<part name="R_IS" library="rcl" deviceset="R-US_" device="0207/12" value="10K"/>
 <part name="TP_IS" library="con-molex" deviceset="22-23-2021" device="" value=""/>
 <part name="TP_IN" library="con-molex" deviceset="22-23-2021" device="" value=""/>
 <part name="R_GND" library="rcl" deviceset="R-US_" device="R1206W" value="0R0"/>
-<part name="R_IS" library="rcl" deviceset="R-US_" device="0207/12" value="10K"/>
 <part name="Q1" library="BTS500101TADATMA2" deviceset="BTS500101TADATMA2" device="" value=""/>
 <part name="P+8" library="supply1" deviceset="+12V" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="C_VS" library="rcl" deviceset="C-US" device="C0805K" value="100n"/>
+<part name="TP_VS" library="con-molex" deviceset="22-23-2021" device="" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6879,17 +6879,18 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <instance part="GND9" gate="1" x="76.2" y="106.68"/>
 <instance part="R_ISPD" gate="G$1" x="195.58" y="142.24" rot="R90"/>
 <instance part="GND14" gate="1" x="195.58" y="127"/>
-<instance part="J_IS" gate="G$1" x="177.8" y="157.48" rot="R180"/>
+<instance part="R_IS" gate="G$1" x="177.8" y="157.48" rot="R180"/>
 <instance part="TP_IS" gate="-1" x="167.64" y="149.86"/>
 <instance part="TP_IS" gate="-2" x="167.64" y="147.32"/>
 <instance part="TP_IN" gate="-1" x="160.02" y="172.72"/>
 <instance part="TP_IN" gate="-2" x="160.02" y="170.18"/>
 <instance part="R_GND" gate="G$1" x="205.74" y="180.34"/>
-<instance part="R_IS" gate="G$1" x="144.78" y="157.48" rot="R180"/>
 <instance part="Q1" gate="G$1" x="215.9" y="162.56"/>
 <instance part="P+8" gate="1" x="251.46" y="175.26"/>
 <instance part="GND15" gate="1" x="251.46" y="147.32"/>
 <instance part="C_VS" gate="G$1" x="251.46" y="157.48"/>
+<instance part="TP_VS" gate="-1" x="93.98" y="137.16"/>
+<instance part="TP_VS" gate="-2" x="93.98" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -7019,9 +7020,16 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <pinref part="RDIV1" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="127" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="129.54" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="129.54" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="129.54" x2="88.9" y2="129.54" width="0.1524" layer="91"/>
 <junction x="76.2" y="129.54"/>
-<label x="86.36" y="129.54" size="1.27" layer="95" xref="yes"/>
+<label x="106.68" y="129.54" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="129.54" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="129.54" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
+<junction x="88.9" y="129.54"/>
+<pinref part="TP_VS" gate="-1" pin="S"/>
+<pinref part="TP_VS" gate="-2" pin="S"/>
+<wire x1="88.9" y1="137.16" x2="91.44" y2="137.16" width="0.1524" layer="91"/>
+<junction x="91.44" y="137.16"/>
 </segment>
 <segment>
 <pinref part="CONTROL" gate="G$1" pin="4"/>
@@ -7044,7 +7052,7 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <wire x1="195.58" y1="157.48" x2="195.58" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="157.48" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
 <junction x="195.58" y="157.48"/>
-<pinref part="J_IS" gate="G$1" pin="1"/>
+<pinref part="R_IS" gate="G$1" pin="1"/>
 <pinref part="Q1" gate="G$1" pin="IS"/>
 <wire x1="195.58" y1="157.48" x2="215.9" y2="157.48" width="0.1524" layer="91"/>
 </segment>
@@ -7052,27 +7060,20 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <net name="IS_OUT" class="0">
 <segment>
 <label x="132.08" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="TP_IS" gate="-2" pin="S"/>
+<pinref part="TP_IS" gate="-1" pin="S"/>
+<wire x1="165.1" y1="149.86" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="R_IS" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="157.48" x2="132.08" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="157.48" x2="172.72" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="149.86" x2="165.1" y2="157.48" width="0.1524" layer="91"/>
+<junction x="165.1" y="149.86"/>
+<junction x="165.1" y="157.48"/>
+<wire x1="132.08" y1="157.48" x2="165.1" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CONTROL" gate="G$1" pin="3"/>
 <wire x1="228.6" y1="78.74" x2="231.14" y2="78.74" width="0.1524" layer="91"/>
 <label x="228.6" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="TP_IS" gate="-2" pin="S"/>
-<pinref part="TP_IS" gate="-1" pin="S"/>
-<wire x1="165.1" y1="149.86" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="R_IS" gate="G$1" pin="1"/>
-<pinref part="J_IS" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="157.48" x2="165.1" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="157.48" x2="172.72" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="149.86" x2="165.1" y2="157.48" width="0.1524" layer="91"/>
-<junction x="165.1" y="149.86"/>
-<junction x="165.1" y="157.48"/>
 </segment>
 </net>
 <net name="N$3" class="0">
