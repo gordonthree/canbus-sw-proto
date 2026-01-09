@@ -6850,7 +6850,7 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <part name="P+8" library="supply1" deviceset="+12V" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="C_VS" library="rcl" deviceset="C-US" device="C0805K" value="100n"/>
-<part name="TP_VOLTAGE" library="con-molex" deviceset="22-23-2021" device="" value=""/>
+<part name="TP_VDIV" library="con-molex" deviceset="22-23-2021" device="" value=""/>
 <part name="TP_GND" library="con-molex" deviceset="22-23-2021" device="" value=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 </parts>
@@ -6891,8 +6891,8 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <instance part="P+8" gate="1" x="251.46" y="175.26"/>
 <instance part="GND15" gate="1" x="251.46" y="147.32"/>
 <instance part="C_VS" gate="G$1" x="251.46" y="157.48"/>
-<instance part="TP_VOLTAGE" gate="-1" x="93.98" y="137.16"/>
-<instance part="TP_VOLTAGE" gate="-2" x="93.98" y="137.16"/>
+<instance part="TP_VDIV" gate="-1" x="93.98" y="137.16"/>
+<instance part="TP_VDIV" gate="-2" x="93.98" y="137.16"/>
 <instance part="TP_GND" gate="-1" x="162.56" y="119.38"/>
 <instance part="TP_GND" gate="-2" x="162.56" y="119.38"/>
 <instance part="GND1" gate="1" x="154.94" y="111.76"/>
@@ -7039,8 +7039,8 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <wire x1="88.9" y1="129.54" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="129.54" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
 <junction x="88.9" y="129.54"/>
-<pinref part="TP_VOLTAGE" gate="-1" pin="S"/>
-<pinref part="TP_VOLTAGE" gate="-2" pin="S"/>
+<pinref part="TP_VDIV" gate="-1" pin="S"/>
+<pinref part="TP_VDIV" gate="-2" pin="S"/>
 <wire x1="88.9" y1="137.16" x2="91.44" y2="137.16" width="0.1524" layer="91"/>
 <junction x="91.44" y="137.16"/>
 </segment>
