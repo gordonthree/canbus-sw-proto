@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.00625" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1736,6 +1736,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="Q1" pad="7"/>
 <contactref element="Q1" pad="6"/>
 <via x="13.6525" y="39.6875" extent="1-16" drill="0.5"/>
+<via x="23.8125" y="40.9575" extent="1-16" drill="0.5"/>
+<via x="23.8125" y="41.91" extent="1-16" drill="0.5"/>
+<via x="23.8125" y="42.8625" extent="1-16" drill="0.5"/>
+<via x="23.8125" y="43.815" extent="1-16" drill="0.5"/>
+<via x="25.7175" y="44.7675" extent="1-16" drill="0.5"/>
+<via x="26.67" y="44.7675" extent="1-16" drill="0.5"/>
+<via x="27.6225" y="44.7675" extent="1-16" drill="0.5"/>
+<via x="28.575" y="44.7675" extent="1-16" drill="0.5"/>
 <via x="28.575" y="55.245" extent="1-16" drill="0.5"/>
 <via x="26.67" y="57.15" extent="1-16" drill="0.5"/>
 <via x="28.575" y="51.7525" extent="1-16" drill="0.5"/>
@@ -1750,47 +1758,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="23.495" y="45.4025"/>
 <vertex x="23.495" y="38.735"/>
 </polygon>
-<via x="28.575" y="39.37" extent="1-16" drill="0.381"/>
-<via x="27.6225" y="39.37" extent="1-16" drill="0.381"/>
-<via x="26.67" y="39.37" extent="1-16" drill="0.381"/>
-<via x="25.7175" y="39.37" extent="1-16" drill="0.381"/>
-<via x="24.765" y="39.37" extent="1-16" drill="0.381"/>
-<via x="25.24125" y="40.005" extent="1-16" drill="0.381"/>
-<via x="26.19375" y="40.005" extent="1-16" drill="0.381"/>
-<via x="27.14625" y="40.005" extent="1-16" drill="0.381"/>
-<via x="28.09875" y="40.005" extent="1-16" drill="0.381"/>
-<via x="24.765" y="40.64" extent="1-16" drill="0.381"/>
-<via x="25.7175" y="40.64" extent="1-16" drill="0.381"/>
-<via x="26.67" y="40.64" extent="1-16" drill="0.381"/>
-<via x="27.6225" y="40.64" extent="1-16" drill="0.381"/>
-<via x="28.575" y="40.64" extent="1-16" drill="0.381"/>
-<via x="28.09875" y="41.275" extent="1-16" drill="0.381"/>
-<via x="27.14625" y="41.275" extent="1-16" drill="0.381"/>
-<via x="26.19375" y="41.275" extent="1-16" drill="0.381"/>
-<via x="25.24125" y="41.275" extent="1-16" drill="0.381"/>
-<via x="24.765" y="41.91" extent="1-16" drill="0.381"/>
-<via x="25.7175" y="41.91" extent="1-16" drill="0.381"/>
-<via x="26.67" y="41.91" extent="1-16" drill="0.381"/>
-<via x="27.6225" y="41.91" extent="1-16" drill="0.381"/>
-<via x="28.575" y="41.91" extent="1-16" drill="0.381"/>
-<via x="28.09875" y="42.545" extent="1-16" drill="0.381"/>
-<via x="27.14625" y="42.545" extent="1-16" drill="0.381"/>
-<via x="26.19375" y="42.545" extent="1-16" drill="0.381"/>
-<via x="25.24125" y="42.545" extent="1-16" drill="0.381"/>
-<via x="24.765" y="43.18" extent="1-16" drill="0.381"/>
-<via x="25.7175" y="43.18" extent="1-16" drill="0.381"/>
-<via x="26.67" y="43.18" extent="1-16" drill="0.381"/>
-<via x="27.6225" y="43.18" extent="1-16" drill="0.381"/>
-<via x="28.575" y="43.18" extent="1-16" drill="0.381"/>
-<via x="28.09875" y="43.815" extent="1-16" drill="0.381"/>
-<via x="27.14625" y="43.815" extent="1-16" drill="0.381"/>
-<via x="26.19375" y="43.815" extent="1-16" drill="0.381"/>
-<via x="25.24125" y="43.815" extent="1-16" drill="0.381"/>
-<via x="24.765" y="44.45" extent="1-16" drill="0.381"/>
-<via x="25.7175" y="44.45" extent="1-16" drill="0.381"/>
-<via x="26.67" y="44.45" extent="1-16" drill="0.381"/>
-<via x="27.6225" y="44.45" extent="1-16" drill="0.381"/>
-<via x="28.575" y="44.45" extent="1-16" drill="0.381"/>
+<via x="24.765" y="44.7675" extent="1-16" drill="0.5"/>
+<via x="23.8125" y="44.7675" extent="1-16" drill="0.5"/>
+<via x="23.8125" y="40.005" extent="1-16" drill="0.5"/>
+<via x="23.8125" y="39.0525" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="GND">
 <polygon width="0.4064" layer="16" spacing="0.3048" rank="6">
@@ -2227,50 +2198,50 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="19,1,057a04823ad93b21"/>
 <approved hash="19,1,860007f806fa8702"/>
 <approved hash="19,1,84c00538053a84c2"/>
-<approved hash="19,1,b63548cd4ec9b031"/>
 <approved hash="19,1,35bf4b474b4835b0"/>
+<approved hash="19,1,b63548cd4ec9b031"/>
 <approved hash="19,1,30274edf4f5831a0"/>
 <approved hash="19,1,8b07ac7fae788900"/>
 <approved hash="19,1,94fdb385b2a495dc"/>
 <approved hash="19,1,944bb3338f38a840"/>
-<approved hash="19,1,d1264ade4ba1d059"/>
 <approved hash="19,1,57344ccc4a3051c8"/>
+<approved hash="19,1,d1264ade4ba1d059"/>
 <approved hash="19,1,d4be4f464fb1d449"/>
-<approved hash="19,1,eb04da7cd878e900"/>
 <approved hash="19,1,f448c530f938c840"/>
 <approved hash="19,1,f4fec586c4a4f5dc"/>
-<approved hash="19,1,783606ce00c37e3b"/>
+<approved hash="19,1,eb04da7cd878e900"/>
 <approved hash="19,1,fe2400dc0152ffaa"/>
+<approved hash="19,1,783606ce00c37e3b"/>
 <approved hash="19,1,fbbc05440542fbba"/>
+<approved hash="19,1,6b045a7c587c6904"/>
 <approved hash="19,1,74fe458644a075d8"/>
 <approved hash="19,1,74484530793c4844"/>
-<approved hash="19,1,6b045a7c587c6904"/>
-<approved hash="19,1,5737cecfc8ca5132"/>
 <approved hash="19,1,d4bdcd45cd4bd4b3"/>
+<approved hash="19,1,5737cecfc8ca5132"/>
 <approved hash="19,1,d125c8ddc95bd0a3"/>
+<approved hash="19,1,8b049c7c9e608918"/>
 <approved hash="19,1,94488330bf20a858"/>
 <approved hash="19,1,94fe838682bc95c4"/>
-<approved hash="19,1,8b049c7c9e608918"/>
-<approved hash="19,1,3634cccccac83030"/>
 <approved hash="19,1,b026cadecb59b1a1"/>
 <approved hash="19,1,b5becf46cf49b5b1"/>
+<approved hash="19,1,3634cccccac83030"/>
 <approved hash="19,1,c44aff32c33ff847"/>
 <approved hash="19,1,db06e07ee27fd907"/>
 <approved hash="19,1,c4fcff84fea3c5db"/>
 <approved hash="19,1,412746df475040a8"/>
-<approved hash="19,1,c73540cd46c1c139"/>
 <approved hash="19,1,44bf4347434044b8"/>
-<approved hash="19,1,644ddd35e1385840"/>
+<approved hash="19,1,c73540cd46c1c139"/>
 <approved hash="19,1,7b01c279c0787900"/>
+<approved hash="19,1,644ddd35e1385840"/>
 <approved hash="19,1,64fbdd83dca465dc"/>
 <approved hash="19,1,a22480dc8163a39b"/>
 <approved hash="19,1,a7bc85448573a78b"/>
 <approved hash="19,1,243686ce80f2220a"/>
+<approved hash="19,1,fcfec586c4a4fddc"/>
 <approved hash="19,1,fc48c530f938c040"/>
 <approved hash="19,1,e304da7cd878e100"/>
-<approved hash="19,1,fcfec586c4a4fddc"/>
-<approved hash="19,1,84ba0542054a84b2"/>
 <approved hash="19,1,073006c800cb0133"/>
+<approved hash="19,1,84ba0542054a84b2"/>
 <approved hash="19,1,812200da015a80a2"/>
 </errors>
 </board>
