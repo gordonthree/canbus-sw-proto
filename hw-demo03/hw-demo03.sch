@@ -7385,6 +7385,7 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="R_IS2" library="rcl" deviceset="R-US_" device="0204/7" value="10K"/>
 <part name="J_5VCAN" library="rcl" deviceset="R-US_" device="0207/15" value="000"/>
+<part name="CDIV" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -7474,6 +7475,7 @@ STM32 Micro with isolated CANBUS interface</text>
 <instance part="GND17" gate="1" x="182.88" y="96.52"/>
 <instance part="R_IS2" gate="G$1" x="172.72" y="114.3" rot="R180"/>
 <instance part="J_5VCAN" gate="G$1" x="60.96" y="226.06" rot="R180"/>
+<instance part="CDIV" gate="G$1" x="83.82" y="121.92"/>
 </instances>
 <busses>
 </busses>
@@ -7557,13 +7559,18 @@ STM32 Micro with isolated CANBUS interface</text>
 <junction x="76.2" y="205.74"/>
 <pinref part="CCAN2" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="198.12" x2="134.62" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="195.58" x2="76.2" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="195.58" x2="129.54" y2="195.58" width="0.1524" layer="91"/>
 <junction x="76.2" y="195.58"/>
 <pinref part="CAN" gate="-2" pin="KL"/>
+<wire x1="129.54" y1="195.58" x2="76.2" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="220.98" x2="152.4" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="220.98" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="195.58" x2="134.62" y2="195.58" width="0.1524" layer="91"/>
 <junction x="134.62" y="195.58"/>
+<pinref part="IC3" gate="G$1" pin="STBY"/>
+<wire x1="124.46" y1="215.9" x2="129.54" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="215.9" x2="129.54" y2="195.58" width="0.1524" layer="91"/>
+<junction x="129.54" y="195.58"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
@@ -7647,8 +7654,13 @@ STM32 Micro with isolated CANBUS interface</text>
 </segment>
 <segment>
 <pinref part="RDIV2" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="109.22" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="109.22" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="CDIV" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="114.3" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="114.3" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="114.3" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
+<junction x="76.2" y="114.3"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -7998,9 +8010,13 @@ STM32 Micro with isolated CANBUS interface</text>
 <pinref part="RDIV1" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="127" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="129.54" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="129.54" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="129.54" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
 <junction x="76.2" y="129.54"/>
-<label x="86.36" y="129.54" size="1.27" layer="95" xref="yes"/>
+<label x="91.44" y="129.54" size="1.27" layer="95" xref="yes"/>
+<pinref part="CDIV" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="129.54" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="124.46" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
+<junction x="83.82" y="129.54"/>
 </segment>
 </net>
 <net name="BOOT0" class="0">
