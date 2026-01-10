@@ -14,7 +14,7 @@ Some circuit board sketches in the free version of EagleCad
 * 1x 4-pos screw terminal for power + can
 * 
 
-## Demo 01 - Single switch 
+## Demo 01 - Single switch with STM32 and CANBUS
 * <img width="400" alt="PCB rendering" src="https://github.com/gordonthree/canbus-sw-proto/blob/main/hw-demo01/pcb-top.png?raw=true"><br>
 * 1x STM32F042
 * 1x Isolated CAN bus transciever
@@ -24,6 +24,25 @@ Some circuit board sketches in the free version of EagleCad
 * Onboard 3v3 and 5v linear regulators
 * Headers for SWLINK and UART
 * Wago style screw terminal connector for 2-wire + drain CANBUS cable
+* High current terminal block style battery input and load output
+  
+## Demo 02 - Single switch 
+* 1x Infineon BTS50010-1TAD PROFet Smart High Side Switch
+* Voltage monitoring via resistor divider
+* Current monitoring via Smart Switch
+* Header for control connection to microcontroller
+* High current terminal block style battery input and load output
+
+## Demo 03 - Dual switch with STM32 and CANBUS
+* 1x STM32F042
+* 1x Isolated CAN bus transciever
+* 2x Infineon BTS50010-1TAD PROFet Smart High Side Switch
+* Voltage monitoring via resistor divider
+* Current monitoring via Smart Switch
+* Onboard 3v3 and 5v linear regulators
+* Headers for SWLINK and UART
+* Wago style screw terminal connector for 2-wire + drain CANBUS cable
+* High current terminal block style battery input and load output
   
 ## Prototype 01 Four switches
 * 1x ESP32
