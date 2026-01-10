@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,19 +39,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -7348,7 +7348,7 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <part name="R_TRM" library="rcl" deviceset="R-US_" device="0204/7" value="120R"/>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="R_IN1" library="rcl" deviceset="R-US_" device="0207/12" value="4K7"/>
+<part name="R_IN1" library="rcl" deviceset="R-US_" device="0207/10" value="4K7"/>
 <part name="BAT+" library="VP0265840000G" deviceset="VP0265840000G" device="" value=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -7367,22 +7367,24 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <part name="C5VIN" library="rcl" deviceset="C-US" device="C1206K" value="1u"/>
 <part name="C3VOUT" library="rcl" deviceset="C-US" device="C0805K" value="1u"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="R_ISPD1" library="rcl" deviceset="R-US_" device="0207/12" value="1K0"/>
+<part name="R_ISPD1" library="rcl" deviceset="R-US_" device="0204/7" value="1K0"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="J_IS1" library="rcl" deviceset="R-US_" device="0207/12" value="0R0"/>
+<part name="R_IS1" library="rcl" deviceset="R-US_" device="0204/7" value="10K"/>
 <part name="R_GND1" library="rcl" deviceset="R-US_" device="R1206W" value="0R0"/>
-<part name="R_IS1" library="rcl" deviceset="R-US_" device="0207/12" value="10K"/>
 <part name="Q1" library="BTS500101TADATMA2" deviceset="BTS500101TADATMA2" device="" value=""/>
 <part name="P+8" library="supply1" deviceset="+12V" device=""/>
 <part name="Q2" library="BTS500101TADATMA2" deviceset="BTS500101TADATMA2" device="" value=""/>
 <part name="SW2+" library="VP0265840000G" deviceset="VP0265840000G" device="" value=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="SW1+" library="VP0265840000G" deviceset="VP0265840000G" device="" value=""/>
-<part name="R_GND2" library="rcl" deviceset="R-US_" device="R1206W" value="0R0"/>
-<part name="R_IN2" library="rcl" deviceset="R-US_" device="0207/12" value="4K7"/>
+<part name="R_GND2" library="rcl" deviceset="R-US_" device="R1206W" value="000"/>
+<part name="R_IN2" library="rcl" deviceset="R-US_" device="0204/7" value="4K7"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="J_IS2" library="rcl" deviceset="R-US_" device="0207/12" value="0R0"/>
-<part name="R_IS2" library="rcl" deviceset="R-US_" device="0207/12" value="10K"/>
+<part name="J_IS2" library="rcl" deviceset="R-US_" device="0207/15" value="000"/>
+<part name="R_ISPD2" library="rcl" deviceset="R-US_" device="0204/7" value="1K0"/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="R_IS2" library="rcl" deviceset="R-US_" device="0204/7" value="10K"/>
+<part name="J_5VCAN" library="rcl" deviceset="R-US_" device="0207/15" value="000"/>
 </parts>
 <sheets>
 <sheet>
@@ -7400,7 +7402,7 @@ STM32 Micro with isolated CANBUS interface</text>
 <instance part="+3V2" gate="G$1" x="-38.1" y="256.54"/>
 <instance part="P+4" gate="1" x="76.2" y="154.94"/>
 <instance part="+3V4" gate="G$1" x="142.24" y="231.14"/>
-<instance part="P+6" gate="1" x="73.66" y="231.14"/>
+<instance part="P+6" gate="1" x="53.34" y="236.22"/>
 <instance part="CAN" gate="-1" x="162.56" y="210.82" rot="R180"/>
 <instance part="CAN" gate="-2" x="162.56" y="220.98" rot="R180"/>
 <instance part="CAN" gate="-3" x="162.56" y="215.9" rot="R180"/>
@@ -7456,9 +7458,8 @@ STM32 Micro with isolated CANBUS interface</text>
 <instance part="GND9" gate="1" x="76.2" y="106.68"/>
 <instance part="R_ISPD1" gate="G$1" x="167.64" y="147.32" rot="R90"/>
 <instance part="GND14" gate="1" x="167.64" y="134.62"/>
-<instance part="J_IS1" gate="G$1" x="157.48" y="157.48" rot="R180"/>
+<instance part="R_IS1" gate="G$1" x="157.48" y="157.48" rot="R180"/>
 <instance part="R_GND1" gate="G$1" x="182.88" y="180.34"/>
-<instance part="R_IS1" gate="G$1" x="139.7" y="157.48" rot="R180"/>
 <instance part="Q1" gate="G$1" x="195.58" y="162.56"/>
 <instance part="P+8" gate="1" x="228.6" y="175.26"/>
 <instance part="Q2" gate="G$1" x="198.12" y="119.38"/>
@@ -7468,8 +7469,11 @@ STM32 Micro with isolated CANBUS interface</text>
 <instance part="R_GND2" gate="G$1" x="187.96" y="139.7"/>
 <instance part="R_IN2" gate="G$1" x="170.18" y="124.46"/>
 <instance part="GND15" gate="1" x="180.34" y="132.08"/>
-<instance part="J_IS2" gate="G$1" x="175.26" y="114.3" rot="R180"/>
-<instance part="R_IS2" gate="G$1" x="162.56" y="114.3" rot="R180"/>
+<instance part="J_IS2" gate="G$1" x="160.02" y="114.3" rot="R180"/>
+<instance part="R_ISPD2" gate="G$1" x="182.88" y="106.68" rot="R90"/>
+<instance part="GND17" gate="1" x="182.88" y="96.52"/>
+<instance part="R_IS2" gate="G$1" x="172.72" y="114.3" rot="R180"/>
+<instance part="J_5VCAN" gate="G$1" x="60.96" y="226.06" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7673,6 +7677,11 @@ STM32 Micro with isolated CANBUS interface</text>
 <wire x1="182.88" y1="139.7" x2="180.34" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="139.7" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="R_ISPD2" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="99.06" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="CANH" class="0">
 <segment>
@@ -7829,17 +7838,6 @@ STM32 Micro with isolated CANBUS interface</text>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="73.66" y1="210.82" x2="73.66" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="VDD"/>
-<wire x1="73.66" y1="218.44" x2="73.66" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="210.82" x2="73.66" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="CCAN1" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="218.44" x2="63.5" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="218.44" x2="63.5" y2="215.9" width="0.1524" layer="91"/>
-<junction x="73.66" y="218.44"/>
-</segment>
-<segment>
 <pinref part="C5VOUT" gate="G$1" pin="1"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <wire x1="2.54" y1="86.36" x2="2.54" y2="91.44" width="0.1524" layer="91"/>
@@ -7862,31 +7860,30 @@ STM32 Micro with isolated CANBUS interface</text>
 <wire x1="-22.86" y1="45.72" x2="-33.02" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-33.02" y="45.72"/>
 </segment>
+<segment>
+<pinref part="J_5VCAN" gate="G$1" pin="2"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+<wire x1="55.88" y1="226.06" x2="53.34" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="226.06" x2="53.34" y2="233.68" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="CTL2" class="0">
-<segment>
-<pinref part="IC4" gate="G$1" pin="PB4"/>
-<wire x1="10.16" y1="243.84" x2="10.16" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="243.84" x2="17.78" y2="243.84" width="0.1524" layer="91"/>
-<label x="17.78" y="243.84" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="R_IN2" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="124.46" x2="165.1" y2="124.46" width="0.1524" layer="91"/>
 <label x="152.4" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="PA15"/>
+<wire x1="15.24" y1="241.3" x2="15.24" y2="233.68" width="0.1524" layer="91"/>
+<label x="15.24" y="241.3" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="CTL1" class="0">
 <segment>
-<wire x1="17.78" y1="241.3" x2="12.7" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="PB3"/>
 <wire x1="12.7" y1="241.3" x2="12.7" y2="233.68" width="0.1524" layer="91"/>
-<label x="17.78" y="241.3" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="G$1" pin="PA13"/>
-<wire x1="30.48" y1="205.74" x2="25.4" y2="205.74" width="0.1524" layer="91"/>
-<label x="30.48" y="205.74" size="1.27" layer="95" xref="yes"/>
+<label x="12.7" y="241.3" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R_IN1" gate="G$1" pin="1"/>
@@ -8039,7 +8036,7 @@ STM32 Micro with isolated CANBUS interface</text>
 <wire x1="167.64" y1="157.48" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="157.48" x2="162.56" y2="157.48" width="0.1524" layer="91"/>
 <junction x="167.64" y="157.48"/>
-<pinref part="J_IS1" gate="G$1" pin="1"/>
+<pinref part="R_IS1" gate="G$1" pin="1"/>
 <pinref part="Q1" gate="G$1" pin="IS"/>
 <wire x1="167.64" y1="157.48" x2="195.58" y2="157.48" width="0.1524" layer="91"/>
 </segment>
@@ -8053,14 +8050,7 @@ STM32 Micro with isolated CANBUS interface</text>
 <segment>
 <label x="132.08" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R_IS1" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="157.48" x2="132.08" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R_IS1" gate="G$1" pin="1"/>
-<pinref part="J_IS1" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -8085,16 +8075,16 @@ STM32 Micro with isolated CANBUS interface</text>
 </segment>
 <segment>
 <pinref part="Q2" gate="G$1" pin="OUT_1"/>
-<wire x1="198.12" y1="111.76" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="111.76" x2="195.58" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="OUT_3"/>
-<wire x1="198.12" y1="106.68" x2="193.04" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="106.68" x2="193.04" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="106.68" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="106.68" x2="195.58" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="OUT_2"/>
-<wire x1="193.04" y1="109.22" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="109.22" x2="193.04" y2="109.22" width="0.1524" layer="91"/>
-<junction x="193.04" y="109.22"/>
-<wire x1="193.04" y1="109.22" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
-<label x="187.96" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="195.58" y1="109.22" x2="195.58" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="109.22" x2="195.58" y2="109.22" width="0.1524" layer="91"/>
+<junction x="195.58" y="109.22"/>
+<wire x1="195.58" y1="109.22" x2="193.04" y2="109.22" width="0.1524" layer="91"/>
+<label x="193.04" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -8115,25 +8105,48 @@ STM32 Micro with isolated CANBUS interface</text>
 <wire x1="187.96" y1="124.46" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="ADC3" class="0">
+<segment>
+<pinref part="J_IS2" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="114.3" x2="154.94" y2="114.3" width="0.1524" layer="91"/>
+<label x="152.4" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="PA0"/>
+<wire x1="-22.86" y1="187.96" x2="-17.78" y2="187.96" width="0.1524" layer="91"/>
+<label x="-22.86" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="J_IS2" gate="G$1" pin="1"/>
 <pinref part="Q2" gate="G$1" pin="IS"/>
-<wire x1="180.34" y1="114.3" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R_ISPD2" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="114.3" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="111.76" x2="182.88" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R_IS2" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="114.3" x2="182.88" y2="114.3" width="0.1524" layer="91"/>
+<junction x="182.88" y="114.3"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="J_IS2" gate="G$1" pin="1"/>
+<pinref part="R_IS2" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="114.3" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="J_IS2" gate="G$1" pin="2"/>
-<pinref part="R_IS2" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="114.3" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC3" class="0">
-<segment>
-<pinref part="R_IS2" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="114.3" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
-<label x="152.4" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="73.66" y1="210.82" x2="73.66" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VDD"/>
+<wire x1="96.52" y1="210.82" x2="73.66" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="CCAN1" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="218.44" x2="63.5" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="218.44" x2="63.5" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="J_5VCAN" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="226.06" x2="73.66" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="226.06" x2="73.66" y2="218.44" width="0.1524" layer="91"/>
+<junction x="73.66" y="218.44"/>
 </segment>
 </net>
 </nets>
