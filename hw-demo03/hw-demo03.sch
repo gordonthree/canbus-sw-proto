@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,19 +39,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -7301,6 +7301,74 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 </deviceset>
 </devicesets>
 </library>
+<library name="OKI-78SR-5_1.5-W36-C">
+<packages>
+<package name="CONV_OKI-78SR-5/1.5-W36-C">
+<wire x1="-5.2" y1="5.3" x2="-5.2" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="-5.2" y1="-3.3" x2="5.2" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="5.2" y1="-3.3" x2="5.2" y2="5.3" width="0.127" layer="21"/>
+<wire x1="5.2" y1="5.3" x2="-5.2" y2="5.3" width="0.127" layer="21"/>
+<wire x1="-5.2" y1="1.3" x2="5.2" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-5.2" y1="2.8" x2="5.2" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-5.2" y1="5.3" x2="-5.2" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-5.2" y1="2.8" x2="-5.2" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-5.2" y1="1.3" x2="-5.2" y2="-3.3" width="0.127" layer="51"/>
+<wire x1="-5.2" y1="-3.3" x2="5.2" y2="-3.3" width="0.127" layer="51"/>
+<wire x1="5.2" y1="-3.3" x2="5.2" y2="1.3" width="0.127" layer="51"/>
+<wire x1="5.2" y1="1.3" x2="5.2" y2="2.8" width="0.127" layer="51"/>
+<wire x1="5.2" y1="2.8" x2="5.2" y2="5.3" width="0.127" layer="51"/>
+<wire x1="5.2" y1="5.3" x2="-5.2" y2="5.3" width="0.127" layer="51"/>
+<circle x="-2.54" y="-3.75" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.54" y="-3.75" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-5.45" y1="-3.55" x2="-5.45" y2="5.55" width="0.05" layer="39"/>
+<wire x1="-5.45" y1="5.55" x2="5.45" y2="5.55" width="0.05" layer="39"/>
+<wire x1="5.45" y1="5.55" x2="5.45" y2="-3.55" width="0.05" layer="39"/>
+<wire x1="5.45" y1="-3.55" x2="-5.45" y2="-3.55" width="0.05" layer="39"/>
+<text x="-5" y="6" size="1" layer="25">&gt;NAME</text>
+<text x="-5" y="-5" size="1" layer="27">&gt;VALUE</text>
+<pad name="1" x="-2.54" y="0" drill="1" diameter="1.5" shape="square"/>
+<pad name="2" x="0" y="0" drill="1" diameter="1.5"/>
+<pad name="3" x="2.54" y="0" drill="1" diameter="1.5"/>
+</package>
+</packages>
+<symbols>
+<symbol name="OKI-78SR-5/1.5-W36-C">
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.1524" layer="94"/>
+<text x="-10.16" y="5.08" size="2.1844" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="2.1844" layer="96">&gt;VALUE</text>
+<pin name="IN" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="COM/GND" x="15.24" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT" x="15.24" y="2.54" length="middle" direction="out" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="OKI-78SR-5/1.5-W36-C" prefix="PS">
+<gates>
+<gate name="G$1" symbol="OKI-78SR-5/1.5-W36-C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONV_OKI-78SR-5/1.5-W36-C">
+<connects>
+<connect gate="G$1" pin="COM/GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="Murata"/>
+<attribute name="MAXIMUM_PACKAGE_HEIGHT" value="16.5mm"/>
+<attribute name="PARTREV" value=""/>
+<attribute name="STANDARD" value="Manufacturer recommendations"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7354,14 +7422,11 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
 <part name="TERM" library="con-molex" deviceset="22-23-2021" device="" value=""/>
-<part name="VR5V0" library="SparkFun-PowerIC" deviceset="V_REG_LM1117" device="SOT223"/>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="VR3V3" library="SparkFun-PowerIC" deviceset="V_REG_LM1117" device="SOT223"/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
-<part name="C12VIN" library="rcl" deviceset="C-US" device="C1206K" value="1u"/>
-<part name="C5VOUT" library="rcl" deviceset="C-US" device="C0805K" value="1u"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="C5VIN" library="rcl" deviceset="C-US" device="C1206K" value="1u"/>
@@ -7386,6 +7451,7 @@ Source: &lt;a href="https://www.infineon.com/assets/row/public/packages/202/foot
 <part name="R_IS2" library="rcl" deviceset="R-US_" device="0204/7" value="10K"/>
 <part name="J_5VCAN" library="rcl" deviceset="R-US_" device="0207/15" value="000"/>
 <part name="CDIV" library="rcl" deviceset="C-US" device="C0603K" value="100n"/>
+<part name="VR5V" library="OKI-78SR-5_1.5-W36-C" deviceset="OKI-78SR-5/1.5-W36-C" device="" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7444,15 +7510,12 @@ STM32 Micro with isolated CANBUS interface</text>
 <instance part="P+2" gate="1" x="83.82" y="91.44"/>
 <instance part="TERM" gate="-1" x="132.08" y="109.22"/>
 <instance part="TERM" gate="-2" x="132.08" y="106.68"/>
-<instance part="VR5V0" gate="G$1" x="-15.24" y="91.44"/>
 <instance part="P+3" gate="1" x="-33.02" y="99.06"/>
 <instance part="VR3V3" gate="G$1" x="-15.24" y="45.72"/>
-<instance part="P+5" gate="1" x="2.54" y="99.06"/>
+<instance part="P+5" gate="1" x="12.7" y="99.06"/>
 <instance part="P+7" gate="1" x="-33.02" y="55.88"/>
 <instance part="+3V1" gate="G$1" x="2.54" y="55.88"/>
-<instance part="C12VIN" gate="G$1" x="-33.02" y="83.82"/>
-<instance part="C5VOUT" gate="G$1" x="2.54" y="83.82"/>
-<instance part="GND7" gate="1" x="-15.24" y="66.04"/>
+<instance part="GND7" gate="1" x="12.7" y="73.66"/>
 <instance part="GND8" gate="1" x="-15.24" y="27.94"/>
 <instance part="C5VIN" gate="G$1" x="-33.02" y="40.64"/>
 <instance part="C3VOUT" gate="G$1" x="2.54" y="40.64"/>
@@ -7476,6 +7539,7 @@ STM32 Micro with isolated CANBUS interface</text>
 <instance part="R_IS2" gate="G$1" x="172.72" y="114.3" rot="R180"/>
 <instance part="J_5VCAN" gate="G$1" x="60.96" y="226.06" rot="R180"/>
 <instance part="CDIV" gate="G$1" x="83.82" y="121.92"/>
+<instance part="VR5V" gate="G$1" x="-15.24" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -7627,19 +7691,6 @@ STM32 Micro with isolated CANBUS interface</text>
 <pinref part="SW1+" gate="G$1" pin="2_2"/>
 </segment>
 <segment>
-<pinref part="C12VIN" gate="G$1" pin="2"/>
-<wire x1="-33.02" y1="78.74" x2="-33.02" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="-33.02" y1="73.66" x2="-15.24" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="73.66" x2="-15.24" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="VR5V0" gate="G$1" pin="ADJ"/>
-<wire x1="-15.24" y1="83.82" x2="-15.24" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-15.24" y="73.66"/>
-<pinref part="C5VOUT" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="73.66" x2="2.54" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="73.66" x2="-15.24" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C5VIN" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="35.56" x2="-33.02" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
@@ -7693,6 +7744,12 @@ STM32 Micro with isolated CANBUS interface</text>
 <pinref part="GND17" gate="1" pin="GND"/>
 <pinref part="R_ISPD2" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="99.06" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="VR5V" gate="G$1" pin="COM/GND"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="0" y1="86.36" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="86.36" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CANH" class="0">
@@ -7829,13 +7886,10 @@ STM32 Micro with isolated CANBUS interface</text>
 <junction x="83.82" y="81.28"/>
 </segment>
 <segment>
-<pinref part="VR5V0" gate="G$1" pin="IN"/>
 <pinref part="P+3" gate="1" pin="+12V"/>
-<wire x1="-22.86" y1="91.44" x2="-33.02" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="91.44" x2="-33.02" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="91.44" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C12VIN" gate="G$1" pin="1"/>
-<wire x1="-33.02" y1="86.36" x2="-33.02" y2="91.44" width="0.1524" layer="91"/>
-<junction x="-33.02" y="91.44"/>
+<pinref part="VR5V" gate="G$1" pin="IN"/>
 </segment>
 <segment>
 <pinref part="P+8" gate="1" pin="+12V"/>
@@ -7850,20 +7904,6 @@ STM32 Micro with isolated CANBUS interface</text>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="C5VOUT" gate="G$1" pin="1"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
-<wire x1="2.54" y1="86.36" x2="2.54" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="VR5V0" gate="G$1" pin="OUT"/>
-<wire x1="2.54" y1="91.44" x2="2.54" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="91.44" x2="-5.08" y2="91.44" width="0.1524" layer="91"/>
-<junction x="2.54" y="91.44"/>
-<pinref part="VR5V0" gate="G$1" pin="OUT@1"/>
-<wire x1="-5.08" y1="91.44" x2="2.54" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="88.9" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="88.9" x2="-5.08" y2="91.44" width="0.1524" layer="91"/>
-<junction x="-5.08" y="91.44"/>
-</segment>
-<segment>
 <pinref part="C5VIN" gate="G$1" pin="1"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="-33.02" y1="43.18" x2="-33.02" y2="45.72" width="0.1524" layer="91"/>
@@ -7877,6 +7917,12 @@ STM32 Micro with isolated CANBUS interface</text>
 <pinref part="P+6" gate="1" pin="+5V"/>
 <wire x1="55.88" y1="226.06" x2="53.34" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="226.06" x2="53.34" y2="233.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="VR5V" gate="G$1" pin="OUT"/>
+<pinref part="P+5" gate="1" pin="+5V"/>
+<wire x1="0" y1="91.44" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="91.44" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CTL2" class="0">
